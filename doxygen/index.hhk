@@ -2179,6 +2179,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ae03f27f570581f6b74c9f3f69f455429"><param name="Name" value="RS2_OPTION_STREAM_FORMAT_FILTER"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a89b0d2023d760b5d0c11331ec269ed97"><param name="Name" value="RS2_OPTION_STREAM_INDEX_FILTER"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ab30f3cdeb8ea68aab5063a0c74cd41fc"><param name="Name" value="RS2_OPTION_TEXTURE_SOURCE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a0b078d516641cc6c9e687e9602c389b4"><param name="Name" value="RS2_OPTION_THERMAL_COMPENSATION"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a692c25cdc98205fd580c4d3de61a8e6c"><param name="Name" value="rs2_option_to_string"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a40388d5a938225f2aeda91aa480b5bb0"><param name="Name" value="RS2_OPTION_TOTAL_FRAME_DROPS"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ae20c43b822f4bc236acbe13cc5e8b1ae"><param name="Name" value="RS2_OPTION_VISUAL_PRESET"></OBJECT>
@@ -2891,6 +2892,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ae03f27f570581f6b74c9f3f69f455429"><param name="Name" value="RS2_OPTION_STREAM_FORMAT_FILTER"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a89b0d2023d760b5d0c11331ec269ed97"><param name="Name" value="RS2_OPTION_STREAM_INDEX_FILTER"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ab30f3cdeb8ea68aab5063a0c74cd41fc"><param name="Name" value="RS2_OPTION_TEXTURE_SOURCE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a0b078d516641cc6c9e687e9602c389b4"><param name="Name" value="RS2_OPTION_THERMAL_COMPENSATION"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a692c25cdc98205fd580c4d3de61a8e6c"><param name="Name" value="rs2_option_to_string"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a40388d5a938225f2aeda91aa480b5bb0"><param name="Name" value="RS2_OPTION_TOTAL_FRAME_DROPS"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ae20c43b822f4bc236acbe13cc5e8b1ae"><param name="Name" value="RS2_OPTION_VISUAL_PRESET"></OBJECT>
