@@ -176,6 +176,71 @@ Functions</h2></td></tr>
 <tr class="separator:a23171f4fe2a4b88713dd4feeaa8b91cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a800a43c7a65f5815af87ee9e6e4ad33b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a800a43c7a65f5815af87ee9e6e4ad33b">rs2_software_sensor_detach</a> (<a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a800a43c7a65f5815af87ee9e6e4ad33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc671d63bd08f13a413dcd7aac3b6ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a2bc671d63bd08f13a413dcd7aac3b6ac">rs2_create_fw_log_message</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a2bc671d63bd08f13a413dcd7aac3b6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates RealSense firmware log message.  <a href="#a2bc671d63bd08f13a413dcd7aac3b6ac">More...</a><br /></td></tr>
+<tr class="separator:a2bc671d63bd08f13a413dcd7aac3b6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85de56c9a747f0944684e613c45b3088"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a85de56c9a747f0944684e613c45b3088">rs2_get_fw_log</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *fw_log_msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a85de56c9a747f0944684e613c45b3088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log.  <a href="#a85de56c9a747f0944684e613c45b3088">More...</a><br /></td></tr>
+<tr class="separator:a85de56c9a747f0944684e613c45b3088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad87252e413a7ce54d5aba12ccd052ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#aad87252e413a7ce54d5aba12ccd052ec">rs2_get_flash_log</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *fw_log_msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:aad87252e413a7ce54d5aba12ccd052ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense flash log - this is a fw log that has been written in the device during the previous shutdown of the device.  <a href="#aad87252e413a7ce54d5aba12ccd052ec">More...</a><br /></td></tr>
+<tr class="separator:aad87252e413a7ce54d5aba12ccd052ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4e12d6113103cdb9db7d941ffe69c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#aaf4e12d6113103cdb9db7d941ffe69c5">rs2_delete_fw_log_message</a> (<a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *msg)</td></tr>
+<tr class="separator:aaf4e12d6113103cdb9db7d941ffe69c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0c47696ebd5f098234dba6e8a896a8"><td class="memItemLeft" align="right" valign="top">const unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#ade0c47696ebd5f098234dba6e8a896a8">rs2_fw_log_message_data</a> (<a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:ade0c47696ebd5f098234dba6e8a896a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log message data.  <a href="#ade0c47696ebd5f098234dba6e8a896a8">More...</a><br /></td></tr>
+<tr class="separator:ade0c47696ebd5f098234dba6e8a896a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2236b43d7aeb53f2e5dcbc63d1d59d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#aa2236b43d7aeb53f2e5dcbc63d1d59d8">rs2_fw_log_message_size</a> (<a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:aa2236b43d7aeb53f2e5dcbc63d1d59d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log message size.  <a href="#aa2236b43d7aeb53f2e5dcbc63d1d59d8">More...</a><br /></td></tr>
+<tr class="separator:aa2236b43d7aeb53f2e5dcbc63d1d59d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7f7c91212e22dd90df82dc83ca6d49"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a1c7f7c91212e22dd90df82dc83ca6d49">rs2_fw_log_message_timestamp</a> (<a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a1c7f7c91212e22dd90df82dc83ca6d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log message timestamp.  <a href="#a1c7f7c91212e22dd90df82dc83ca6d49">More...</a><br /></td></tr>
+<tr class="separator:a1c7f7c91212e22dd90df82dc83ca6d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6f71f2520b61a77be0062e0042577ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#ad6f71f2520b61a77be0062e0042577ff">rs2_fw_log_message_severity</a> (const <a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:ad6f71f2520b61a77be0062e0042577ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log message severity.  <a href="#ad6f71f2520b61a77be0062e0042577ff">More...</a><br /></td></tr>
+<tr class="separator:ad6f71f2520b61a77be0062e0042577ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965d893d71ae858df154e6fdc8d4d039"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a965d893d71ae858df154e6fdc8d4d039">rs2_init_fw_log_parser</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, const char *xml_content, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a965d893d71ae858df154e6fdc8d4d039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes RealSense firmware logs parser in device.  <a href="#a965d893d71ae858df154e6fdc8d4d039">More...</a><br /></td></tr>
+<tr class="separator:a965d893d71ae858df154e6fdc8d4d039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0568333c45cd2ea85c8b699026052cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#ae0568333c45cd2ea85c8b699026052cd">rs2_create_fw_log_parsed_message</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:ae0568333c45cd2ea85c8b699026052cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates RealSense firmware log parsed message.  <a href="#ae0568333c45cd2ea85c8b699026052cd">More...</a><br /></td></tr>
+<tr class="separator:ae0568333c45cd2ea85c8b699026052cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e483acf3f6860f071fc207fb3794091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a1e483acf3f6860f071fc207fb3794091">rs2_delete_fw_log_parsed_message</a> (<a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *fw_log_parsed_msg)</td></tr>
+<tr class="memdesc:a1e483acf3f6860f071fc207fb3794091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes RealSense firmware log parsed message.  <a href="#a1e483acf3f6860f071fc207fb3794091">More...</a><br /></td></tr>
+<tr class="separator:a1e483acf3f6860f071fc207fb3794091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71db469a5d568dcc3fd22f79dc562cbe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a71db469a5d568dcc3fd22f79dc562cbe">rs2_parse_firmware_log</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *fw_log_msg, <a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *parsed_msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a71db469a5d568dcc3fd22f79dc562cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log parser.  <a href="#a71db469a5d568dcc3fd22f79dc562cbe">More...</a><br /></td></tr>
+<tr class="separator:a71db469a5d568dcc3fd22f79dc562cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70128653215b5ae1870fd646a1eac870"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a70128653215b5ae1870fd646a1eac870">rs2_get_fw_log_parsed_message</a> (<a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *fw_log_parsed_msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a70128653215b5ae1870fd646a1eac870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log parsed message.  <a href="#a70128653215b5ae1870fd646a1eac870">More...</a><br /></td></tr>
+<tr class="separator:a70128653215b5ae1870fd646a1eac870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430bd57d0d6c7d2732ecc612e108aa7d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a430bd57d0d6c7d2732ecc612e108aa7d">rs2_get_fw_log_parsed_file_name</a> (<a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *fw_log_parsed_msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a430bd57d0d6c7d2732ecc612e108aa7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log parsed message file name.  <a href="#a430bd57d0d6c7d2732ecc612e108aa7d">More...</a><br /></td></tr>
+<tr class="separator:a430bd57d0d6c7d2732ecc612e108aa7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd73443847f83f446ab0bf83814cb7a8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#acd73443847f83f446ab0bf83814cb7a8">rs2_get_fw_log_parsed_thread_name</a> (<a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *fw_log_parsed_msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:acd73443847f83f446ab0bf83814cb7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log parsed message thread name.  <a href="#acd73443847f83f446ab0bf83814cb7a8">More...</a><br /></td></tr>
+<tr class="separator:acd73443847f83f446ab0bf83814cb7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac4595315ecdae8e04c9945a9b151ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a0ac4595315ecdae8e04c9945a9b151ea">rs2_get_fw_log_parsed_severity</a> (<a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *fw_log_parsed_msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a0ac4595315ecdae8e04c9945a9b151ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log parsed message severity.  <a href="#a0ac4595315ecdae8e04c9945a9b151ea">More...</a><br /></td></tr>
+<tr class="separator:a0ac4595315ecdae8e04c9945a9b151ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848f79aceea27202d355d288d5866ce1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a848f79aceea27202d355d288d5866ce1">rs2_get_fw_log_parsed_line</a> (<a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *fw_log_parsed_msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a848f79aceea27202d355d288d5866ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log parsed message relevant line (in the file that is returned by rs2_get_fw_log_parsed_file_name).  <a href="#a848f79aceea27202d355d288d5866ce1">More...</a><br /></td></tr>
+<tr class="separator:a848f79aceea27202d355d288d5866ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb973106b49cf182e2d8f36468133ec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#adcb973106b49cf182e2d8f36468133ec">rs2_get_fw_log_parsed_timestamp</a> (<a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *fw_log_parsed_msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:adcb973106b49cf182e2d8f36468133ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets RealSense firmware log parsed message timestamp.  <a href="#adcb973106b49cf182e2d8f36468133ec">More...</a><br /></td></tr>
+<tr class="separator:adcb973106b49cf182e2d8f36468133ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9d3834888352dbae5aa17ddb7ec7f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a3d9d3834888352dbae5aa17ddb7ec7f9">rs2_create_terminal_parser</a> (const char *xml_content, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:a3d9d3834888352dbae5aa17ddb7ec7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates RealSense terminal parser.  <a href="#a3d9d3834888352dbae5aa17ddb7ec7f9">More...</a><br /></td></tr>
+<tr class="separator:a3d9d3834888352dbae5aa17ddb7ec7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22e816df9e8153fb0b4095ccbedf1a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#ad22e816df9e8153fb0b4095ccbedf1a1">rs2_delete_terminal_parser</a> (<a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a> *terminal_parser)</td></tr>
+<tr class="memdesc:ad22e816df9e8153fb0b4095ccbedf1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes RealSense terminal parser.  <a href="#ad22e816df9e8153fb0b4095ccbedf1a1">More...</a><br /></td></tr>
+<tr class="separator:ad22e816df9e8153fb0b4095ccbedf1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba2a23b846970eef1cccb57daf7a1d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#adba2a23b846970eef1cccb57daf7a1d8">rs2_terminal_parse_command</a> (<a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a> *terminal_parser, const char *command, unsigned int size_of_command, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:adba2a23b846970eef1cccb57daf7a1d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses terminal command via RealSense terminal parser.  <a href="#adba2a23b846970eef1cccb57daf7a1d8">More...</a><br /></td></tr>
+<tr class="separator:adba2a23b846970eef1cccb57daf7a1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa863c796e50269ddcd361068ca65773a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#aa863c796e50269ddcd361068ca65773a">rs2_terminal_parse_response</a> (<a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a> *terminal_parser, const char *command, unsigned int size_of_command, const void *response, unsigned int size_of_response, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="memdesc:aa863c796e50269ddcd361068ca65773a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses terminal response via RealSense terminal parser.  <a href="#aa863c796e50269ddcd361068ca65773a">More...</a><br /></td></tr>
+<tr class="separator:aa863c796e50269ddcd361068ca65773a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exposes RealSense internal functionality for C compilers. </p>
@@ -330,6 +395,82 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a2bc671d63bd08f13a413dcd7aac3b6ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc671d63bd08f13a413dcd7aac3b6ac">&#9670;&nbsp;</a></span>rs2_create_fw_log_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a>* rs2_create_fw_log_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates RealSense firmware log message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>Device from which the FW log will be taken using the created message </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to created empty firmware log message </dd></dl>
+
+</div>
+</div>
+<a id="ae0568333c45cd2ea85c8b699026052cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0568333c45cd2ea85c8b699026052cd">&#9670;&nbsp;</a></span>rs2_create_fw_log_parsed_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a>* rs2_create_fw_log_parsed_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates RealSense firmware log parsed message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>Device from which the FW log will be taken using the created message </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to created empty firmware log message </dd></dl>
+
+</div>
+</div>
 <a id="a2ce903ea64ce3264160f940060c79d8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ce903ea64ce3264160f940060c79d8b">&#9670;&nbsp;</a></span>rs2_create_mock_context()</h2>
 
@@ -515,6 +656,687 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>software device object, should be released by rs2_delete_device </dd></dl>
+
+</div>
+</div>
+<a id="a3d9d3834888352dbae5aa17ddb7ec7f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9d3834888352dbae5aa17ddb7ec7f9">&#9670;&nbsp;</a></span>rs2_create_terminal_parser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a>* rs2_create_terminal_parser </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>xml_content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates RealSense terminal parser. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">xml_content</td><td>content of the xml file needed for parsing </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to created terminal parser object </dd></dl>
+
+</div>
+</div>
+<a id="aaf4e12d6113103cdb9db7d941ffe69c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf4e12d6113103cdb9db7d941ffe69c5">&#9670;&nbsp;</a></span>rs2_delete_fw_log_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_delete_fw_log_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Delete RealSense firmware log message </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>Realsense firmware log message to delete </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e483acf3f6860f071fc207fb3794091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e483acf3f6860f071fc207fb3794091">&#9670;&nbsp;</a></span>rs2_delete_fw_log_parsed_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_delete_fw_log_parsed_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_parsed_msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes RealSense firmware log parsed message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>message to be deleted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad22e816df9e8153fb0b4095ccbedf1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22e816df9e8153fb0b4095ccbedf1a1">&#9670;&nbsp;</a></span>rs2_delete_terminal_parser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_delete_terminal_parser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a> *&#160;</td>
+          <td class="paramname"><em>terminal_parser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes RealSense terminal parser. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal_parser</td><td>terminal parser to be deleted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade0c47696ebd5f098234dba6e8a896a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade0c47696ebd5f098234dba6e8a896a8">&#9670;&nbsp;</a></span>rs2_fw_log_message_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char* rs2_fw_log_message_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log message data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>firmware log message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to start of the firmware log message data </dd></dl>
+
+</div>
+</div>
+<a id="ad6f71f2520b61a77be0062e0042577ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f71f2520b61a77be0062e0042577ff">&#9670;&nbsp;</a></span>rs2_fw_log_message_severity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> rs2_fw_log_message_severity </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log message severity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>firmware log message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>severity of the firmware log message data </dd></dl>
+
+</div>
+</div>
+<a id="aa2236b43d7aeb53f2e5dcbc63d1d59d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2236b43d7aeb53f2e5dcbc63d1d59d8">&#9670;&nbsp;</a></span>rs2_fw_log_message_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_fw_log_message_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log message size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>firmware log message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size of the firmware log message data </dd></dl>
+
+</div>
+</div>
+<a id="a1c7f7c91212e22dd90df82dc83ca6d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c7f7c91212e22dd90df82dc83ca6d49">&#9670;&nbsp;</a></span>rs2_fw_log_message_timestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int rs2_fw_log_message_timestamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log message timestamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>firmware log message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>timestamp of the firmware log message </dd></dl>
+
+</div>
+</div>
+<a id="aad87252e413a7ce54d5aba12ccd052ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad87252e413a7ce54d5aba12ccd052ec">&#9670;&nbsp;</a></span>rs2_get_flash_log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_get_flash_log </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense flash log - this is a fw log that has been written in the device during the previous shutdown of the device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>Device from which the FW log should be taken </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_log_msg</td><td>Firmware log message object to be filled </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true for success, false for failure - failure happens if no firmware log was sent by the hardware monitor </dd></dl>
+
+</div>
+</div>
+<a id="a85de56c9a747f0944684e613c45b3088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85de56c9a747f0944684e613c45b3088">&#9670;&nbsp;</a></span>rs2_get_fw_log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_get_fw_log </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>Device from which the FW log should be taken </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_log_msg</td><td>Firmware log message object to be filled </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true for success, false for failure - failure happens if no firmware log was sent by the hardware monitor </dd></dl>
+
+</div>
+</div>
+<a id="a430bd57d0d6c7d2732ecc612e108aa7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430bd57d0d6c7d2732ecc612e108aa7d">&#9670;&nbsp;</a></span>rs2_get_fw_log_parsed_file_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_get_fw_log_parsed_file_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_parsed_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log parsed message file name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_log_parsed_msg</td><td>firmware log parsed message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>file name of the firmware log parsed message </dd></dl>
+
+</div>
+</div>
+<a id="a848f79aceea27202d355d288d5866ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848f79aceea27202d355d288d5866ce1">&#9670;&nbsp;</a></span>rs2_get_fw_log_parsed_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int rs2_get_fw_log_parsed_line </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_parsed_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log parsed message relevant line (in the file that is returned by rs2_get_fw_log_parsed_file_name). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_log_parsed_msg</td><td>firmware log parsed message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>line number of the firmware log parsed message </dd></dl>
+
+</div>
+</div>
+<a id="a70128653215b5ae1870fd646a1eac870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70128653215b5ae1870fd646a1eac870">&#9670;&nbsp;</a></span>rs2_get_fw_log_parsed_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_get_fw_log_parsed_message </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_parsed_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log parsed message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_log_parsed_msg</td><td>firmware log parsed message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>message of the firmware log parsed message </dd></dl>
+
+</div>
+</div>
+<a id="a0ac4595315ecdae8e04c9945a9b151ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac4595315ecdae8e04c9945a9b151ea">&#9670;&nbsp;</a></span>rs2_get_fw_log_parsed_severity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> rs2_get_fw_log_parsed_severity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_parsed_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log parsed message severity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_log_parsed_msg</td><td>firmware log parsed message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>severity of the firmware log parsed message </dd></dl>
+
+</div>
+</div>
+<a id="acd73443847f83f446ab0bf83814cb7a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd73443847f83f446ab0bf83814cb7a8">&#9670;&nbsp;</a></span>rs2_get_fw_log_parsed_thread_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_get_fw_log_parsed_thread_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_parsed_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log parsed message thread name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_log_parsed_msg</td><td>firmware log parsed message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>thread name of the firmware log parsed message </dd></dl>
+
+</div>
+</div>
+<a id="adcb973106b49cf182e2d8f36468133ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb973106b49cf182e2d8f36468133ec">&#9670;&nbsp;</a></span>rs2_get_fw_log_parsed_timestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int rs2_get_fw_log_parsed_timestamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_parsed_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log parsed message timestamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_log_parsed_msg</td><td>firmware log parsed message object </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>timestamp of the firmware log parsed message </dd></dl>
+
+</div>
+</div>
+<a id="a965d893d71ae858df154e6fdc8d4d039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a965d893d71ae858df154e6fdc8d4d039">&#9670;&nbsp;</a></span>rs2_init_fw_log_parser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_init_fw_log_parser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>xml_content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes RealSense firmware logs parser in device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>Device from which the FW log will be taken </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">xml_content</td><td>content of the xml file needed for parsing </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true for success, false for failure - failure happens if opening the xml from the xml_path input fails </dd></dl>
+
+</div>
+</div>
+<a id="a71db469a5d568dcc3fd22f79dc562cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71db469a5d568dcc3fd22f79dc562cbe">&#9670;&nbsp;</a></span>rs2_parse_firmware_log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_parse_firmware_log </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> *&#160;</td>
+          <td class="paramname"><em>fw_log_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> *&#160;</td>
+          <td class="paramname"><em>parsed_msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets RealSense firmware log parser. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>Device from which the FW log will be taken </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_log_msg</td><td>firmware log message to be parsed </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parsed_msg</td><td>firmware log parsed message - place holder for the resulting parsed message </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true for success, false for failure - failure happens if message could not be parsed </dd></dl>
 
 </div>
 </div>
@@ -1488,6 +2310,124 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="adba2a23b846970eef1cccb57daf7a1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba2a23b846970eef1cccb57daf7a1d8">&#9670;&nbsp;</a></span>rs2_terminal_parse_command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a>* rs2_terminal_parse_command </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a> *&#160;</td>
+          <td class="paramname"><em>terminal_parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size_of_command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses terminal command via RealSense terminal parser. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal_parser</td><td>Terminal parser object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>command to be sent to the hw monitor of the device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size_of_command</td><td>size of command to be sent to the hw monitor of the device </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>command to hw monitor, in hex </dd></dl>
+
+</div>
+</div>
+<a id="aa863c796e50269ddcd361068ca65773a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa863c796e50269ddcd361068ca65773a">&#9670;&nbsp;</a></span>rs2_terminal_parse_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a>* rs2_terminal_parse_response </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a> *&#160;</td>
+          <td class="paramname"><em>terminal_parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size_of_command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>size_of_response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses terminal response via RealSense terminal parser. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminal_parser</td><td>Terminal parser object </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>command sent to the hw monitor of the device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size_of_command</td><td>size of the command to sent to the hw monitor of the device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">response</td><td>response received by the hw monitor of the device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size_of_response</td><td>size of the response received by the hw monitor of the device </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>answer parsed </dd></dl>
 
 </div>
 </div>

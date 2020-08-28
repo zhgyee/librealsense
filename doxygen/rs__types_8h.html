@@ -63,6 +63,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__intrinsics.html">rs2_intrinsics</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Video stream intrinsics.  <a href="structrs2__intrinsics.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__dsm__params.html">rs2_dsm_params</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Video DSM (Digital Sync Module) parameters for calibration (same layout as in FW ac_depth_params) This is the block in MC that converts angles to dimensionless integers reported to MA (using "DSM coefficients").  <a href="structrs2__dsm__params.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__motion__device__intrinsic.html">rs2_motion_device_intrinsic</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motion device intrinsics: scale, bias, and variances.  <a href="structrs2__motion__device__intrinsic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,6 +98,11 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ad6c95436edcbc19b9f69d628099b1c2a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrs2__intrinsics.html">rs2_intrinsics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ad6c95436edcbc19b9f69d628099b1c2a">rs2_intrinsics</a></td></tr>
 <tr class="memdesc:ad6c95436edcbc19b9f69d628099b1c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Video stream intrinsics.  <a href="#ad6c95436edcbc19b9f69d628099b1c2a">More...</a><br /></td></tr>
 <tr class="separator:ad6c95436edcbc19b9f69d628099b1c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7bdd2fd7fb008f1a4ea6f3e5a9914c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrs2__dsm__params.html">rs2_dsm_params</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#afd7bdd2fd7fb008f1a4ea6f3e5a9914c">rs2_dsm_params</a></td></tr>
+<tr class="memdesc:afd7bdd2fd7fb008f1a4ea6f3e5a9914c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Video DSM (Digital Sync Module) parameters for calibration (same layout as in FW ac_depth_params) This is the block in MC that converts angles to dimensionless integers reported to MA (using "DSM coefficients").  <a href="#afd7bdd2fd7fb008f1a4ea6f3e5a9914c">More...</a><br /></td></tr>
+<tr class="separator:afd7bdd2fd7fb008f1a4ea6f3e5a9914c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c669f57737f06ca185e578ffb7708d1"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__types_8h.html#ae87a0055a3cc34612fa9cdcb79a206c2">rs2_dsm_correction_model</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#a9c669f57737f06ca185e578ffb7708d1">rs2_dsm_correction_model</a></td></tr>
+<tr class="separator:a9c669f57737f06ca185e578ffb7708d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa98c1d67e3d75dac2d058675c242ca"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrs2__motion__device__intrinsic.html">rs2_motion_device_intrinsic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#a0fa98c1d67e3d75dac2d058675c242ca">rs2_motion_device_intrinsic</a></td></tr>
 <tr class="memdesc:a0fa98c1d67e3d75dac2d058675c242ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motion device intrinsics: scale, bias, and variances.  <a href="#a0fa98c1d67e3d75dac2d058675c242ca">More...</a><br /></td></tr>
 <tr class="separator:a0fa98c1d67e3d75dac2d058675c242ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +193,14 @@ Typedefs</h2></td></tr>
 <tr class="separator:a979cf7323b227cc89c3970592b9be897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4cfaf43c30c37843a3ac1d27d1ac870"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrs2__notifications__callback.html">rs2_notifications_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ac4cfaf43c30c37843a3ac1d27d1ac870">rs2_notifications_callback</a></td></tr>
 <tr class="separator:ac4cfaf43c30c37843a3ac1d27d1ac870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ba9237173d19f922cd52b835d977af"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a></td></tr>
+<tr class="separator:a73ba9237173d19f922cd52b835d977af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0a826efa4b0ea4a1e59491be0c6251"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a></td></tr>
+<tr class="separator:a9e0a826efa4b0ea4a1e59491be0c6251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d53ca097c5261c3d1c8d1c27bf4f92b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rs__types_8h.html#a8d53ca097c5261c3d1c8d1c27bf4f92b">rs2_firmware_log_parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#a8d53ca097c5261c3d1c8d1c27bf4f92b">rs2_firmware_log_parser</a></td></tr>
+<tr class="separator:a8d53ca097c5261c3d1c8d1c27bf4f92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae539ff4ff5dfac7f5eeaf4ac4ca4aa25"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a></td></tr>
+<tr class="separator:ae539ff4ff5dfac7f5eeaf4ac4ca4aa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2e6b8b0d242b6dce5ad3ea959153a11"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#af2e6b8b0d242b6dce5ad3ea959153a11">rs2_log_callback_ptr</a>) (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a>, <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *, void *arg)</td></tr>
 <tr class="separator:af2e6b8b0d242b6dce5ad3ea959153a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9a55deefe7ca210b16be8e39747c65"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#a6a9a55deefe7ca210b16be8e39747c65">rs2_notification_callback_ptr</a>) (<a class="el" href="rs__types_8h.html#a979cf7323b227cc89c3970592b9be897">rs2_notification</a> *, void *)</td></tr>
@@ -249,6 +265,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a96a8444bedb23db02c92712e0a0c37ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distortion model: defines how pixel coordinates should be mapped to sensor coordinates.  <a href="rs__types_8h.html#a96a8444bedb23db02c92712e0a0c37ae">More...</a><br /></td></tr>
 <tr class="separator:a96a8444bedb23db02c92712e0a0c37ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87a0055a3cc34612fa9cdcb79a206c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#ae87a0055a3cc34612fa9cdcb79a206c2">rs2_dsm_correction_model</a> { <a class="el" href="rs__types_8h.html#ae87a0055a3cc34612fa9cdcb79a206c2a8e8cc780f331d45041366fe9845ed08f">RS2_DSM_CORRECTION_NONE</a>, 
+<a class="el" href="rs__types_8h.html#ae87a0055a3cc34612fa9cdcb79a206c2a0e0146a7ed1af68e14acc1a89a9e0003">RS2_DSM_CORRECTION_AOT</a>, 
+<a class="el" href="rs__types_8h.html#ae87a0055a3cc34612fa9cdcb79a206c2a2b471dc8cf831019163c88e2e2072b4b">RS2_DSM_CORRECTION_TOA</a>, 
+<a class="el" href="rs__types_8h.html#ae87a0055a3cc34612fa9cdcb79a206c2a1fce0f3bb46ce8aa498b1e6f3d5c24f1">RS2_DSM_CORRECTION_COUNT</a>
+ }</td></tr>
+<tr class="separator:ae87a0055a3cc34612fa9cdcb79a206c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a312ebc7e1d7f444e97bbb998bee035d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> { <br />
 &#160;&#160;<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4a8cdb77d55ab162ceb6073b5b2cd263b7">RS2_LOG_SEVERITY_DEBUG</a>, 
 <a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4a66bf7adaa9c7ed7d2291ef08387f8497">RS2_LOG_SEVERITY_INFO</a>, 
@@ -322,6 +344,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa205b63e00419c716233fe72026aa899f">RS2_EXTENSION_FISHEYE_SENSOR</a>, 
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa4672df499968802bc36b525f36fec49b">RS2_EXTENSION_DEPTH_HUFFMAN_DECODER</a>, 
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa8ddab6bc4ce973a1528764f0442eb03b">RS2_EXTENSION_SERIALIZABLE</a>, 
+<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa0dcedb052687458e1ffc53253147542d">RS2_EXTENSION_FW_LOGGER</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aad9b17fd775e9c3d122005d9cdf1c1cfc">RS2_EXTENSION_AUTO_CALIBRATION_FILTER</a>, 
+<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aabd69699cf963938f77f304b511d096aa">RS2_EXTENSION_DEVICE_CALIBRATION</a>, 
+<a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aac8306f38f5b20a9947014ae85d5eda5a">RS2_EXTENSION_CALIBRATED_SENSOR</a>, 
 <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa0b4f59b824f69d456b53638b0f4ddef4">RS2_EXTENSION_COUNT</a>
 <br />
  }</td></tr>
@@ -514,6 +541,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9c669f57737f06ca185e578ffb7708d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c669f57737f06ca185e578ffb7708d1">&#9670;&nbsp;</a></span>rs2_dsm_correction_model</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="rs__types_8h.html#ae87a0055a3cc34612fa9cdcb79a206c2">rs2_dsm_correction_model</a>  <a class="el" href="rs__types_8h.html#ae87a0055a3cc34612fa9cdcb79a206c2">rs2_dsm_correction_model</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd7bdd2fd7fb008f1a4ea6f3e5a9914c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7bdd2fd7fb008f1a4ea6f3e5a9914c">&#9670;&nbsp;</a></span>rs2_dsm_params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structrs2__dsm__params.html">rs2_dsm_params</a>  <a class="el" href="structrs2__dsm__params.html">rs2_dsm_params</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Video DSM (Digital Sync Module) parameters for calibration (same layout as in FW ac_depth_params) This is the block in MC that converts angles to dimensionless integers reported to MA (using "DSM coefficients"). </p>
+
+</div>
+</div>
 <a id="ab2e9b1e9fd4b0cb3ed42f33f0c9dec03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">&#9670;&nbsp;</a></span>rs2_error</h2>
 
@@ -557,6 +614,48 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Specifies advanced interfaces (capabilities) objects may implement. </p>
+
+</div>
+</div>
+<a id="a73ba9237173d19f922cd52b835d977af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ba9237173d19f922cd52b835d977af">&#9670;&nbsp;</a></span>rs2_firmware_log_message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a> <a class="el" href="rs__types_8h.html#a73ba9237173d19f922cd52b835d977af">rs2_firmware_log_message</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e0a826efa4b0ea4a1e59491be0c6251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0a826efa4b0ea4a1e59491be0c6251">&#9670;&nbsp;</a></span>rs2_firmware_log_parsed_message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a> <a class="el" href="rs__types_8h.html#a9e0a826efa4b0ea4a1e59491be0c6251">rs2_firmware_log_parsed_message</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d53ca097c5261c3d1c8d1c27bf4f92b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d53ca097c5261c3d1c8d1c27bf4f92b">&#9670;&nbsp;</a></span>rs2_firmware_log_parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="rs__types_8h.html#a8d53ca097c5261c3d1c8d1c27bf4f92b">rs2_firmware_log_parser</a> <a class="el" href="rs__types_8h.html#a8d53ca097c5261c3d1c8d1c27bf4f92b">rs2_firmware_log_parser</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1079,6 +1178,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae539ff4ff5dfac7f5eeaf4ac4ca4aa25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">&#9670;&nbsp;</a></span>rs2_terminal_parser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a> <a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8c102778c8a60c0db2c75d2bfe4ae94b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c102778c8a60c0db2c75d2bfe4ae94b">&#9670;&nbsp;</a></span>rs2_time_t</h2>
 
@@ -1187,6 +1300,29 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae87a0055a3cc34612fa9cdcb79a206c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae87a0055a3cc34612fa9cdcb79a206c2">&#9670;&nbsp;</a></span>rs2_dsm_correction_model</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="rs__types_8h.html#ae87a0055a3cc34612fa9cdcb79a206c2">rs2_dsm_correction_model</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae87a0055a3cc34612fa9cdcb79a206c2a8e8cc780f331d45041366fe9845ed08f"></a>RS2_DSM_CORRECTION_NONE&#160;</td><td class="fielddoc"><p>hFactor and hOffset are not used, and no artificial error is induced </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae87a0055a3cc34612fa9cdcb79a206c2a0e0146a7ed1af68e14acc1a89a9e0003"></a>RS2_DSM_CORRECTION_AOT&#160;</td><td class="fielddoc"><p>Aging-over-thermal (default); aging-induced error is uniform across temperature </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae87a0055a3cc34612fa9cdcb79a206c2a2b471dc8cf831019163c88e2e2072b4b"></a>RS2_DSM_CORRECTION_TOA&#160;</td><td class="fielddoc"><p>Thermal-over-aging; aging-induced error changes alongside temperature </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae87a0055a3cc34612fa9cdcb79a206c2a1fce0f3bb46ce8aa498b1e6f3d5c24f1"></a>RS2_DSM_CORRECTION_COUNT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ab73d6772c40d1a2fba645a1d0a7eed5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab73d6772c40d1a2fba645a1d0a7eed5e">&#9670;&nbsp;</a></span>rs2_exception_type</h2>
 
@@ -1283,6 +1419,10 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa205b63e00419c716233fe72026aa899f"></a>RS2_EXTENSION_FISHEYE_SENSOR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa4672df499968802bc36b525f36fec49b"></a>RS2_EXTENSION_DEPTH_HUFFMAN_DECODER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa8ddab6bc4ce973a1528764f0442eb03b"></a>RS2_EXTENSION_SERIALIZABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa0dcedb052687458e1ffc53253147542d"></a>RS2_EXTENSION_FW_LOGGER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aad9b17fd775e9c3d122005d9cdf1c1cfc"></a>RS2_EXTENSION_AUTO_CALIBRATION_FILTER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aabd69699cf963938f77f304b511d096aa"></a>RS2_EXTENSION_DEVICE_CALIBRATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aac8306f38f5b20a9947014ae85d5eda5a"></a>RS2_EXTENSION_CALIBRATED_SENSOR&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7b6061f32e49fc7c6ff0e5734a380d8aa0b4f59b824f69d456b53638b0f4ddef4"></a>RS2_EXTENSION_COUNT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 

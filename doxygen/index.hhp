@@ -82,8 +82,12 @@ readme_8md.html
 md__c_1_jenkins_sys_rsbuild_workspace__l_r_s_doxygen_pipeline_source_include_readme.html
 structglfw__binding.html
 structglfw__binding-members.html
+structrs2__calibration__change__callback.html
+structrs2__calibration__change__callback-members.html
 structrs2__devices__changed__callback.html
 structrs2__devices__changed__callback-members.html
+structrs2__dsm__params.html
+structrs2__dsm__params-members.html
 structrs2__extrinsics.html
 structrs2__extrinsics-members.html
 structrs2__frame__callback.html
@@ -165,6 +169,10 @@ classrs2_1_1auto__calibrated__device.html
 classrs2_1_1auto__calibrated__device-members.html
 classrs2_1_1calibrated__device.html
 classrs2_1_1calibrated__device-members.html
+classrs2_1_1calibrated__sensor.html
+classrs2_1_1calibrated__sensor-members.html
+classrs2_1_1calibration__change__callback.html
+classrs2_1_1calibration__change__callback-members.html
 classrs2_1_1color__sensor.html
 classrs2_1_1color__sensor-members.html
 classrs2_1_1colorizer.html
@@ -187,6 +195,8 @@ classrs2_1_1depth__stereo__sensor.html
 classrs2_1_1depth__stereo__sensor-members.html
 classrs2_1_1device.html
 classrs2_1_1device-members.html
+classrs2_1_1device__calibration.html
+classrs2_1_1device__calibration-members.html
 classrs2_1_1device__hub.html
 classrs2_1_1device__hub-members.html
 classrs2_1_1device__list.html
@@ -207,6 +217,12 @@ classrs2_1_1filter.html
 classrs2_1_1filter-members.html
 classrs2_1_1filter__interface.html
 classrs2_1_1filter__interface-members.html
+classrs2_1_1firmware__log__message.html
+classrs2_1_1firmware__log__message-members.html
+classrs2_1_1firmware__log__parsed__message.html
+classrs2_1_1firmware__log__parsed__message-members.html
+classrs2_1_1firmware__logger.html
+classrs2_1_1firmware__logger-members.html
 classrs2_1_1fisheye__sensor.html
 classrs2_1_1fisheye__sensor-members.html
 classrs2_1_1frame.html
@@ -299,6 +315,8 @@ classrs2_1_1syncer.html
 classrs2_1_1syncer-members.html
 classrs2_1_1temporal__filter.html
 classrs2_1_1temporal__filter-members.html
+classrs2_1_1terminal__parser.html
+classrs2_1_1terminal__parser-members.html
 structrs2_1_1texture__coordinate.html
 structrs2_1_1texture__coordinate-members.html
 classrs2_1_1threshold__filter.html
@@ -465,6 +483,7 @@ open.png
 bdwn.png
 sync_on.png
 sync_off.png
+structrs2__calibration__change__callback.png
 structrs2__devices__changed__callback.png
 structrs2__frame__callback.png
 structrs2__frame__processor__callback.png
@@ -477,6 +496,8 @@ classrs2_1_1align.png
 classrs2_1_1asynchronous__syncer.png
 classrs2_1_1auto__calibrated__device.png
 classrs2_1_1calibrated__device.png
+classrs2_1_1calibrated__sensor.png
+classrs2_1_1calibration__change__callback.png
 classrs2_1_1color__sensor.png
 classrs2_1_1colorizer.png
 classrs2_1_1context.png
@@ -487,12 +508,14 @@ classrs2_1_1depth__huffman__decoder.png
 classrs2_1_1depth__sensor.png
 classrs2_1_1depth__stereo__sensor.png
 classrs2_1_1device.png
+classrs2_1_1device__calibration.png
 classrs2_1_1devices__changed__callback.png
 classrs2_1_1disparity__frame.png
 classrs2_1_1disparity__transform.png
 classrs2_1_1error.png
 classrs2_1_1filter.png
 classrs2_1_1filter__interface.png
+classrs2_1_1firmware__logger.png
 classrs2_1_1fisheye__sensor.png
 classrs2_1_1frame.png
 classrs2_1_1frame__callback.png

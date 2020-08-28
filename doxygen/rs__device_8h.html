@@ -45,6 +45,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rs_device.h File Reference</div>  </div>
@@ -66,6 +68,45 @@ Macros</h2></td></tr>
 <tr class="separator:a98230e7ef8e265fb3792bd6f21085f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a417cef8866dd28c0ee52d1866f67c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a90a417cef8866dd28c0ee52d1866f67c">RS2_UNSIGNED_UPDATE_MODE_FULL</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a90a417cef8866dd28c0ee52d1866f67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0adc2efae385d6fe6e22c80f8a918a27"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3a">rs2_calibration_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a0adc2efae385d6fe6e22c80f8a918a27">rs2_calibration_type</a></td></tr>
+<tr class="separator:a0adc2efae385d6fe6e22c80f8a918a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54f3ab690916987e5600bf537d1384b"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3">rs2_calibration_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#ae54f3ab690916987e5600bf537d1384b">rs2_calibration_status</a></td></tr>
+<tr class="separator:ae54f3ab690916987e5600bf537d1384b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8324718abe4ad9e93798b1e2ca0f6e3a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structrs2__calibration__change__callback.html">rs2_calibration_change_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a8324718abe4ad9e93798b1e2ca0f6e3a">rs2_calibration_change_callback</a></td></tr>
+<tr class="separator:a8324718abe4ad9e93798b1e2ca0f6e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9941e39e63fba1d8d3609d0df906fbd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#ad9941e39e63fba1d8d3609d0df906fbd">rs2_calibration_change_callback_ptr</a>) (<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3">rs2_calibration_status</a>, void *arg)</td></tr>
+<tr class="separator:ad9941e39e63fba1d8d3609d0df906fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a17811f3a329ffcaf786ad629960bcc3a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3a">rs2_calibration_type</a> { <a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3aa8cdb5b9ad9d024010554dc0f6350fa59">RS2_CALIBRATION_AUTO_DEPTH_TO_RGB</a>, 
+<a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3aa0b9166ed5857a12f8dabbb54886e8cd5">RS2_CALIBRATION_MANUAL_DEPTH_TO_RGB</a>, 
+<a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3aa5cee8eda3433b2908ee07350c12815a1">RS2_CALIBRATION_TYPE_COUNT</a>
+ }</td></tr>
+<tr class="separator:a17811f3a329ffcaf786ad629960bcc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18ea6c4d16a60605e90fc17a833c7c3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3">rs2_calibration_status</a> { <br />
+&#160;&#160;<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3a857e61cbeeb74d0ba36f343376491f92">RS2_CALIBRATION_TRIGGERED</a> = 0, 
+<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3a736249be18d325c5a480fc440677851d">RS2_CALIBRATION_SPECIAL_FRAME</a> = 1, 
+<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3a88f17a1e2f3b932274fb326498ddd091">RS2_CALIBRATION_STARTED</a> = 2, 
+<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3aa86254536f129cfc0ec06749a3a14eeb">RS2_CALIBRATION_NOT_NEEDED</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3ace65943249556fce1ad4f0c39c2aea11">RS2_CALIBRATION_SUCCESSFUL</a> = 4, 
+<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3af7c234d39e03e377c7c98b9f37a1704f">RS2_CALIBRATION_RETRY</a> = -1, 
+<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3a1a5a28e1e3a7565dc75e72b6aefee03d">RS2_CALIBRATION_FAILED</a> = -2, 
+<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3adf64eb98399987f7ccdc888a95514b43">RS2_CALIBRATION_SCENE_INVALID</a> = -3, 
+<br />
+&#160;&#160;<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3a723ff0d5f4e06ddc70a2444888bd3d5c">RS2_CALIBRATION_BAD_RESULT</a> = -4, 
+<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3a776bec360ab3573a27c0af47e216e3b7">RS2_CALIBRATION_BAD_CONDITIONS</a> = -5, 
+<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3a53e9eb7c4e3940b8f513d6b58e68d6dc">RS2_CALIBRATION_STATUS_FIRST</a> = -5, 
+<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3af3a538ae091379051edd846e765577e9">RS2_CALIBRATION_STATUS_LAST</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3ab64c61600faa621b54905ce5a8a15cdd">RS2_CALIBRATION_STATUS_COUNT</a> = RS2_CALIBRATION_STATUS_LAST - RS2_CALIBRATION_STATUS_FIRST + 1
+<br />
+ }</td></tr>
+<tr class="separator:ae18ea6c4d16a60605e90fc17a833c7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -125,6 +166,16 @@ Functions</h2></td></tr>
 <tr class="separator:a5965c8669dda8669c5fe4292f897def9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad782d0c950dc27aebd11618761079c98"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#ad782d0c950dc27aebd11618761079c98">rs2_run_tare_calibration_cpp</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, float ground_truth_mm, const void *json_content, int content_size, <a class="el" href="structrs2__update__progress__callback.html">rs2_update_progress_callback</a> *progress_callback, int timeout_ms, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:ad782d0c950dc27aebd11618761079c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c29ab44edefa36052d0118e183d3dd8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a5c29ab44edefa36052d0118e183d3dd8">rs2_calibration_type_to_string</a> (<a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3a">rs2_calibration_type</a>)</td></tr>
+<tr class="separator:a5c29ab44edefa36052d0118e183d3dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cb25a338a657086410d7c34bf3b7a6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a58cb25a338a657086410d7c34bf3b7a6">rs2_calibration_status_to_string</a> (<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3">rs2_calibration_status</a>)</td></tr>
+<tr class="separator:a58cb25a338a657086410d7c34bf3b7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9836cb23ac85dd7716232c40ecf3b52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#ae9836cb23ac85dd7716232c40ecf3b52">rs2_register_calibration_change_callback</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__device_8h.html#ad9941e39e63fba1d8d3609d0df906fbd">rs2_calibration_change_callback_ptr</a> callback, void *user, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:ae9836cb23ac85dd7716232c40ecf3b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8430e5ac3b0b19ac6e1955eea62fccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#ad8430e5ac3b0b19ac6e1955eea62fccf">rs2_register_calibration_change_callback_cpp</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="structrs2__calibration__change__callback.html">rs2_calibration_change_callback</a> *callback, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:ad8430e5ac3b0b19ac6e1955eea62fccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273f9bd6e9cbfc00798c37aa5a9182b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a273f9bd6e9cbfc00798c37aa5a9182b1">rs2_trigger_device_calibration</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3a">rs2_calibration_type</a> type, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a273f9bd6e9cbfc00798c37aa5a9182b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e2d5d2abeae101147f088dcb74e989b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a9e2d5d2abeae101147f088dcb74e989b">rs2_run_tare_calibration</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, float ground_truth_mm, const void *json_content, int content_size, <a class="el" href="rs__types_8h.html#a60a099c83ec9152eafd74ed3455d7278">rs2_update_progress_callback_ptr</a> callback, void *client_data, int timeout_ms, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a9e2d5d2abeae101147f088dcb74e989b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b4b94ae8871f87c460715881edb2285"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a8b4b94ae8871f87c460715881edb2285">rs2_get_calibration_table</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -181,7 +232,153 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8324718abe4ad9e93798b1e2ca0f6e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8324718abe4ad9e93798b1e2ca0f6e3a">&#9670;&nbsp;</a></span>rs2_calibration_change_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structrs2__calibration__change__callback.html">rs2_calibration_change_callback</a> <a class="el" href="structrs2__calibration__change__callback.html">rs2_calibration_change_callback</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9941e39e63fba1d8d3609d0df906fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9941e39e63fba1d8d3609d0df906fbd">&#9670;&nbsp;</a></span>rs2_calibration_change_callback_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* rs2_calibration_change_callback_ptr) (<a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3">rs2_calibration_status</a>, void *arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae54f3ab690916987e5600bf537d1384b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae54f3ab690916987e5600bf537d1384b">&#9670;&nbsp;</a></span>rs2_calibration_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3">rs2_calibration_status</a>  <a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3">rs2_calibration_status</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used in device_calibration with <a class="el" href="structrs2__calibration__change__callback.html">rs2_calibration_change_callback</a> </p>
+
+</div>
+</div>
+<a id="a0adc2efae385d6fe6e22c80f8a918a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0adc2efae385d6fe6e22c80f8a918a27">&#9670;&nbsp;</a></span>rs2_calibration_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3a">rs2_calibration_type</a>  <a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3a">rs2_calibration_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used in device_calibration; enumerates the different calibration types available for that extension. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ae18ea6c4d16a60605e90fc17a833c7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae18ea6c4d16a60605e90fc17a833c7c3">&#9670;&nbsp;</a></span>rs2_calibration_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3">rs2_calibration_status</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used in device_calibration with <a class="el" href="structrs2__calibration__change__callback.html">rs2_calibration_change_callback</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3a857e61cbeeb74d0ba36f343376491f92"></a>RS2_CALIBRATION_TRIGGERED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3a736249be18d325c5a480fc440677851d"></a>RS2_CALIBRATION_SPECIAL_FRAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3a88f17a1e2f3b932274fb326498ddd091"></a>RS2_CALIBRATION_STARTED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3aa86254536f129cfc0ec06749a3a14eeb"></a>RS2_CALIBRATION_NOT_NEEDED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3ace65943249556fce1ad4f0c39c2aea11"></a>RS2_CALIBRATION_SUCCESSFUL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3af7c234d39e03e377c7c98b9f37a1704f"></a>RS2_CALIBRATION_RETRY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3a1a5a28e1e3a7565dc75e72b6aefee03d"></a>RS2_CALIBRATION_FAILED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3adf64eb98399987f7ccdc888a95514b43"></a>RS2_CALIBRATION_SCENE_INVALID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3a723ff0d5f4e06ddc70a2444888bd3d5c"></a>RS2_CALIBRATION_BAD_RESULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3a776bec360ab3573a27c0af47e216e3b7"></a>RS2_CALIBRATION_BAD_CONDITIONS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3a53e9eb7c4e3940b8f513d6b58e68d6dc"></a>RS2_CALIBRATION_STATUS_FIRST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3af3a538ae091379051edd846e765577e9"></a>RS2_CALIBRATION_STATUS_LAST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae18ea6c4d16a60605e90fc17a833c7c3ab64c61600faa621b54905ce5a8a15cdd"></a>RS2_CALIBRATION_STATUS_COUNT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a17811f3a329ffcaf786ad629960bcc3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17811f3a329ffcaf786ad629960bcc3a">&#9670;&nbsp;</a></span>rs2_calibration_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3a">rs2_calibration_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used in device_calibration; enumerates the different calibration types available for that extension. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a17811f3a329ffcaf786ad629960bcc3aa8cdb5b9ad9d024010554dc0f6350fa59"></a>RS2_CALIBRATION_AUTO_DEPTH_TO_RGB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a17811f3a329ffcaf786ad629960bcc3aa0b9166ed5857a12f8dabbb54886e8cd5"></a>RS2_CALIBRATION_MANUAL_DEPTH_TO_RGB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a17811f3a329ffcaf786ad629960bcc3aa5cee8eda3433b2908ee07350c12815a1"></a>RS2_CALIBRATION_TYPE_COUNT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a58cb25a338a657086410d7c34bf3b7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cb25a338a657086410d7c34bf3b7a6">&#9670;&nbsp;</a></span>rs2_calibration_status_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_calibration_status_to_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__device_8h.html#ae18ea6c4d16a60605e90fc17a833c7c3">rs2_calibration_status</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c29ab44edefa36052d0118e183d3dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c29ab44edefa36052d0118e183d3dd8">&#9670;&nbsp;</a></span>rs2_calibration_type_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_calibration_type_to_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3a">rs2_calibration_type</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a886c68f5bf7c40430ac2f0e26c11b2b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a886c68f5bf7c40430ac2f0e26c11b2b6">&#9670;&nbsp;</a></span>rs2_connect_tm2_controller()</h2>
 
@@ -901,6 +1098,97 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae9836cb23ac85dd7716232c40ecf3b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9836cb23ac85dd7716232c40ecf3b52">&#9670;&nbsp;</a></span>rs2_register_calibration_change_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_register_calibration_change_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__device_8h.html#ad9941e39e63fba1d8d3609d0df906fbd">rs2_calibration_change_callback_ptr</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a callback for a sensor that gets called when calibration (intrinsics) changes, e.g. due to auto-calibration </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>the sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>the C callback function that gets called </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user</td><td>user argument that gets passed to the callback function </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad8430e5ac3b0b19ac6e1955eea62fccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8430e5ac3b0b19ac6e1955eea62fccf">&#9670;&nbsp;</a></span>rs2_register_calibration_change_callback_cpp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_register_calibration_change_callback_cpp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrs2__calibration__change__callback.html">rs2_calibration_change_callback</a> *&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a callback for a sensor that gets called when calibration (intrinsics) changes, e.g. due to auto-calibration </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>the sensor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>the C++ callback interface that gets called </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a327af0fd1c6427d0dbe065271379b57f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a327af0fd1c6427d0dbe065271379b57f">&#9670;&nbsp;</a></span>rs2_reset_to_factory_calibration()</h2>
 
@@ -1388,6 +1676,48 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the parameter both exist and well-defined for the specific device </dd></dl>
+
+</div>
+</div>
+<a id="a273f9bd6e9cbfc00798c37aa5a9182b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a273f9bd6e9cbfc00798c37aa5a9182b1">&#9670;&nbsp;</a></span>rs2_trigger_device_calibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_trigger_device_calibration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__device_8h.html#a17811f3a329ffcaf786ad629960bcc3a">rs2_calibration_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Triggers calibration of the given type </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dev</td><td>the device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the type of calibration requested </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

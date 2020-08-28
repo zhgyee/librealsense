@@ -63,6 +63,9 @@ $(function() {
 <li>recording_context()
 : <a class="el" href="classrs2_1_1recording__context.html#a13a682e6d4d057dc8673ca1a0a43683e">rs2::recording_context</a>
 </li>
+<li>register_calibration_change_callback()
+: <a class="el" href="classrs2_1_1device__calibration.html#acdb49f9a00de709a2a18c3b82d777399">rs2::device_calibration</a>
+</li>
 <li>register_extrinsics_to()
 : <a class="el" href="classrs2_1_1stream__profile.html#ab037f6e2676caef369f8fa1f56c04c6d">rs2::stream_profile</a>
 </li>
@@ -73,7 +76,8 @@ $(function() {
 : <a class="el" href="classrs2_1_1processing__block.html#a782b990933754cb0d0f1d7ef80b8c923">rs2::processing_block</a>
 </li>
 <li>release()
-: <a class="el" href="classrs2_1_1devices__changed__callback.html#a876b54c3e4bca567673065a676541b33">rs2::devices_changed_callback&lt; T &gt;</a>
+: <a class="el" href="classrs2_1_1calibration__change__callback.html#a99ecfbb881ef6b0c85545eb7364b33d0">rs2::calibration_change_callback&lt; callback &gt;</a>
+, <a class="el" href="classrs2_1_1devices__changed__callback.html#a876b54c3e4bca567673065a676541b33">rs2::devices_changed_callback&lt; T &gt;</a>
 , <a class="el" href="classrs2_1_1frame__callback.html#a1736c31cb29d3d15787c619f831a81e6">rs2::frame_callback&lt; T &gt;</a>
 , <a class="el" href="classrs2_1_1frame__processor__callback.html#abe4bc0484ed199610781f04e37bfa027">rs2::frame_processor_callback&lt; T &gt;</a>
 , <a class="el" href="classrs2_1_1log__callback.html#a1feab5d856bdc7d95147d07214c83d17">rs2::log_callback&lt; T &gt;</a>
@@ -81,6 +85,7 @@ $(function() {
 , <a class="el" href="classrs2_1_1software__device__destruction__callback.html#a8fabe5e9d87e9d2cd9822308186a7a11">rs2::software_device_destruction_callback&lt; T &gt;</a>
 , <a class="el" href="classrs2_1_1status__changed__callback.html#acebd0d09ccbc775e4ae8f38867547131">rs2::status_changed_callback&lt; T &gt;</a>
 , <a class="el" href="classrs2_1_1update__progress__callback.html#a50dc259470c3a672b1d27bedffc56716">rs2::update_progress_callback&lt; T &gt;</a>
+, <a class="el" href="structrs2__calibration__change__callback.html#a0f28b2f0dbd58ad332d0688bb6d88707">rs2_calibration_change_callback</a>
 , <a class="el" href="structrs2__devices__changed__callback.html#a50f613450e60f6bfafd5698adefd3c55">rs2_devices_changed_callback</a>
 , <a class="el" href="structrs2__frame__callback.html#af704d313fb30031f7d7720c97d6485af">rs2_frame_callback</a>
 , <a class="el" href="structrs2__frame__processor__callback.html#a83f8f067bbba98c9714441eebcf20a35">rs2_frame_processor_callback</a>
@@ -96,8 +101,14 @@ $(function() {
 <li>removeThresh
 : <a class="el" href="struct_s_t_rsm.html#a3bef247b2874e94411a61f9da8134a5c">STRsm</a>
 </li>
+<li>reserved
+: <a class="el" href="structrs2__dsm__params.html#a53b37ae43e30d495fa15dd467a4e19b5">rs2_dsm_params</a>
+</li>
 <li>reset()
 : <a class="el" href="classrs2_1_1frame.html#a001f3fc97a9efe93340aef000d3f03f1">rs2::frame</a>
+</li>
+<li>reset_calibration()
+: <a class="el" href="classrs2_1_1calibrated__sensor.html#af651643a216e3856bc8d7542af4cfbe2">rs2::calibrated_sensor</a>
 </li>
 <li>reset_to_factory_calibration()
 : <a class="el" href="classrs2_1_1calibrated__device.html#af78ad520e9abe86925658480ab079692">rs2::calibrated_device</a>
@@ -167,6 +178,9 @@ $(function() {
 </li>
 <li>rsmBypass
 : <a class="el" href="struct_s_t_rsm.html#a044269cd638a013c79b345870ad1a5be">STRsm</a>
+</li>
+<li>rtd_offset
+: <a class="el" href="structrs2__dsm__params.html#af85bc13de7699b2b1bfd4492197f553e">rs2_dsm_params</a>
 </li>
 <li>run_on_chip_calibration()
 : <a class="el" href="classrs2_1_1auto__calibrated__device.html#a75f06fc23740c6c4a7b08f68d48c75d1">rs2::auto_calibrated_device</a>
