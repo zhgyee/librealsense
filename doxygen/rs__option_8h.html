@@ -81,6 +81,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a0bd100c3dd2b45b7c62309cc3aaf6a3f"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__option_8h.html#a9dcf7808cfdf16621909870c18514235">rs2_cah_trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a0bd100c3dd2b45b7c62309cc3aaf6a3f">rs2_cah_trigger</a></td></tr>
 <tr class="memdesc:a0bd100c3dd2b45b7c62309cc3aaf6a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">values for RS2_OPTION_TRIGGER_CAMERA_ACCURACY_HEALTH option.  <a href="#a0bd100c3dd2b45b7c62309cc3aaf6a3f">More...</a><br /></td></tr>
 <tr class="separator:a0bd100c3dd2b45b7c62309cc3aaf6a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb07613b50e8201a1dbf86f224e372f"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0a">rs2_host_perf_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a5bb07613b50e8201a1dbf86f224e372f">rs2_host_perf_mode</a></td></tr>
+<tr class="memdesc:a5bb07613b50e8201a1dbf86f224e372f"><td class="mdescLeft">&#160;</td><td class="mdescRight">values for RS2_OPTION_HOST_PERFORMANCE option.  <a href="#a5bb07613b50e8201a1dbf86f224e372f">More...</a><br /></td></tr>
+<tr class="separator:a5bb07613b50e8201a1dbf86f224e372f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -178,7 +181,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a0b078d516641cc6c9e687e9602c389b4">RS2_OPTION_THERMAL_COMPENSATION</a>, 
 <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2adbeed0c68c0c4184d2440bd3d2e79a6c">RS2_OPTION_TRIGGER_CAMERA_ACCURACY_HEALTH</a>, 
 <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ad28d06cf63fde09c5bf14e0915ed66a9">RS2_OPTION_RESET_CAMERA_ACCURACY_HEALTH</a>, 
-<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419">RS2_OPTION_COUNT</a>
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a2c6f13d17524a9fb77197d6d51f3cda0">RS2_OPTION_HOST_PERFORMANCE</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a2f4b24b7d109582742c4a9168fbdef0e">RS2_OPTION_HDR_ENABLED</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a034877d58d16c22d87fd3ec7cabfcfbb">RS2_OPTION_SEQUENCE_NAME</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ac58043c9b752acb9c5d57f9b0e668354">RS2_OPTION_SEQUENCE_SIZE</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a7dcca5eb6cd4859f548a2ef5b1047be0">RS2_OPTION_SEQUENCE_ID</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419">RS2_OPTION_COUNT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a8b9c011f705cfab20c7eaaa7a26040e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines general configuration controls. These can generally be mapped to camera UVC controls, and can be set / queried at any time unless stated otherwise.  <a href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">More...</a><br /></td></tr>
@@ -248,6 +258,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a9dcf7808cfdf16621909870c18514235"><td class="mdescLeft">&#160;</td><td class="mdescRight">values for RS2_OPTION_TRIGGER_CAMERA_ACCURACY_HEALTH option.  <a href="rs__option_8h.html#a9dcf7808cfdf16621909870c18514235">More...</a><br /></td></tr>
 <tr class="separator:a9dcf7808cfdf16621909870c18514235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800e6b9b7a3585591a91bc61c91aec0a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0a">rs2_host_perf_mode</a> { <a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0aa86cc5a137c0be2a5a1f978802e65b38a">RS2_HOST_PERF_DEFAULT</a> = 0, 
+<a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0aa5c8974162a639cb71789d80f39a74a59">RS2_HOST_PERF_LOW</a> = 1, 
+<a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0aaca249b569bc6a5937cb09b108bb51ef4">RS2_HOST_PERF_HIGH</a> = 2, 
+<a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0aaabe978044c9a6667be6eb87757eb42ec">RS2_HOST_PERF_COUNT</a>
+ }</td></tr>
+<tr class="memdesc:a800e6b9b7a3585591a91bc61c91aec0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">values for RS2_OPTION_HOST_PERFORMANCE option.  <a href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0a">More...</a><br /></td></tr>
+<tr class="separator:a800e6b9b7a3585591a91bc61c91aec0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -265,6 +282,8 @@ Functions</h2></td></tr>
 <tr class="separator:a27ab5196a861cfdb82b8b8ec2fd79941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada67822c163d2c5db821e8e577c8578d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#ada67822c163d2c5db821e8e577c8578d">rs2_cah_trigger_to_string</a> (<a class="el" href="rs__option_8h.html#a9dcf7808cfdf16621909870c18514235">rs2_cah_trigger</a> preset)</td></tr>
 <tr class="separator:ada67822c163d2c5db821e8e577c8578d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79e64686909fc03da4c8042043243b5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#ab79e64686909fc03da4c8042043243b5">rs2_host_perf_mode_to_string</a> (<a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0a">rs2_host_perf_mode</a> perf)</td></tr>
+<tr class="separator:ab79e64686909fc03da4c8042043243b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1b8d666e304e0b73d7a53d794f751fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#ac1b8d666e304e0b73d7a53d794f751fc">rs2_is_option_read_only</a> (const <a class="el" href="rs__types_8h.html#ae51b2a412b632c6caef98bf91629f274">rs2_options</a> *options, <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a> option, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:ac1b8d666e304e0b73d7a53d794f751fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd731fbcfb4f43b3c46bd23d720b506a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#afd731fbcfb4f43b3c46bd23d720b506a">rs2_get_option</a> (const <a class="el" href="rs__types_8h.html#ae51b2a412b632c6caef98bf91629f274">rs2_options</a> *options, <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">rs2_option</a> option, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -322,6 +341,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>values for RS2_OPTION_TRIGGER_CAMERA_ACCURACY_HEALTH option. </p>
+
+</div>
+</div>
+<a id="a5bb07613b50e8201a1dbf86f224e372f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bb07613b50e8201a1dbf86f224e372f">&#9670;&nbsp;</a></span>rs2_host_perf_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0a">rs2_host_perf_mode</a>  <a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0a">rs2_host_perf_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>values for RS2_OPTION_HOST_PERFORMANCE option. </p>
 
 </div>
 </div>
@@ -447,6 +482,32 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a9dcf7808cfdf16621909870c18514235aeb690b3916c07f4eb81ab0c85eb73da0"></a>RS2_CAH_TRIGGER_AUTO&#160;</td><td class="fielddoc"><p>triggered periodically or with certain conditions </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9dcf7808cfdf16621909870c18514235a3973a79bade980b56ba71c3ad9604cd7"></a>RS2_CAH_TRIGGER_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a800e6b9b7a3585591a91bc61c91aec0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800e6b9b7a3585591a91bc61c91aec0a">&#9670;&nbsp;</a></span>rs2_host_perf_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0a">rs2_host_perf_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>values for RS2_OPTION_HOST_PERFORMANCE option. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a800e6b9b7a3585591a91bc61c91aec0aa86cc5a137c0be2a5a1f978802e65b38a"></a>RS2_HOST_PERF_DEFAULT&#160;</td><td class="fielddoc"><p>no change in settings, use device defaults </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a800e6b9b7a3585591a91bc61c91aec0aa5c8974162a639cb71789d80f39a74a59"></a>RS2_HOST_PERF_LOW&#160;</td><td class="fielddoc"><p>low performance host mode, if host cannot keep up with workload, this option may improve stability, for example, it sets larger USB transaction granularity, reduces number of transactions and improve performance and stability on relatively weak hosts as compared to the workload </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a800e6b9b7a3585591a91bc61c91aec0aaca249b569bc6a5937cb09b108bb51ef4"></a>RS2_HOST_PERF_HIGH&#160;</td><td class="fielddoc"><p>high performance host mode, if host is strong as compared to the work and can handle workload without delay, this option sets smaller USB transactions granularity and as result larger number of transactions and workload on host, but reduces chance in device frame drops </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a800e6b9b7a3585591a91bc61c91aec0aaabe978044c9a6667be6eb87757eb42ec"></a>RS2_HOST_PERF_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>
 </table>
 
@@ -641,6 +702,16 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2adbeed0c68c0c4184d2440bd3d2e79a6c"></a>RS2_OPTION_TRIGGER_CAMERA_ACCURACY_HEALTH&#160;</td><td class="fielddoc"><p>Enable depth &amp; color frame sync with periodic calibration for proper alignment </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ad28d06cf63fde09c5bf14e0915ed66a9"></a>RS2_OPTION_RESET_CAMERA_ACCURACY_HEALTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a2c6f13d17524a9fb77197d6d51f3cda0"></a>RS2_OPTION_HOST_PERFORMANCE&#160;</td><td class="fielddoc"><p>Set host performance mode to optimize device settings so host can keep up with workload, for example, USB transaction granularity, setting option to low performance host leads to larger USB transaction size and reduced number of transactions which improves performance and stability if host is relatively weak as compared to workload </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a2f4b24b7d109582742c4a9168fbdef0e"></a>RS2_OPTION_HDR_ENABLED&#160;</td><td class="fielddoc"><p>Enable / disable HDR </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a034877d58d16c22d87fd3ec7cabfcfbb"></a>RS2_OPTION_SEQUENCE_NAME&#160;</td><td class="fielddoc"><p>HDR Sequence size </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ac58043c9b752acb9c5d57f9b0e668354"></a>RS2_OPTION_SEQUENCE_SIZE&#160;</td><td class="fielddoc"><p>HDR Sequence size </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a7dcca5eb6cd4859f548a2ef5b1047be0"></a>RS2_OPTION_SEQUENCE_ID&#160;</td><td class="fielddoc"><p>HDR Sequence ID - 0 is not HDR; sequence ID for HDR configuartion starts from 1 </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419"></a>RS2_OPTION_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>
 </table>
@@ -1157,6 +1228,24 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab79e64686909fc03da4c8042043243b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79e64686909fc03da4c8042043243b5">&#9670;&nbsp;</a></span>rs2_host_perf_mode_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_host_perf_mode_to_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__option_8h.html#a800e6b9b7a3585591a91bc61c91aec0a">rs2_host_perf_mode</a>&#160;</td>
+          <td class="paramname"><em>perf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
