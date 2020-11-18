@@ -304,6 +304,8 @@ Functions</h2></td></tr>
 <tr class="separator:a69240dc72cec55e12e5f202d7ab8f828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab08dcd1c1c51fd3e777f421f69791cdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#ab08dcd1c1c51fd3e777f421f69791cdd">rs2_set_motion_device_intrinsics</a> (const <a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> *sensor, const <a class="el" href="rs__types_8h.html#a338107a48471d20ecacac3e4c9e024e2">rs2_stream_profile</a> *profile, const <a class="el" href="structrs2__motion__device__intrinsic.html">rs2_motion_device_intrinsic</a> *intrinsics, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:ab08dcd1c1c51fd3e777f421f69791cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad5635a518c7989ed9ee376f5917b31"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__sensor_8h.html#abad5635a518c7989ed9ee376f5917b31">rs2_get_max_usable_depth_range</a> (<a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> const *sensor, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:abad5635a518c7989ed9ee376f5917b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exposes RealSense sensor functionality for C compilers. </p>
@@ -1174,6 +1176,42 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abad5635a518c7989ed9ee376f5917b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abad5635a518c7989ed9ee376f5917b31">&#9670;&nbsp;</a></span>rs2_get_max_usable_depth_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rs2_get_max_usable_depth_range </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a0847baf8b5a57c456d2d950ff21c5096">rs2_sensor</a> const *&#160;</td>
+          <td class="paramname"><em>sensor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>When called on a depth sensor, this method will return the maximum range of the camera given the amount of ambient light in the scene </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sensor</td><td>depth sensor </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the max usable range in meters </dd></dl>
 
 </div>
 </div>

@@ -247,6 +247,8 @@ classrs2_1_1log__callback.html
 classrs2_1_1log__callback-members.html
 classrs2_1_1log__message.html
 classrs2_1_1log__message-members.html
+classrs2_1_1max__usable__range__sensor.html
+classrs2_1_1max__usable__range__sensor-members.html
 classrs2_1_1mock__context.html
 classrs2_1_1mock__context-members.html
 classrs2_1_1motion__frame.html
@@ -529,6 +531,7 @@ classrs2_1_1frameset_1_1iterator.png
 classrs2_1_1hdr__merge.png
 classrs2_1_1hole__filling__filter.png
 classrs2_1_1log__callback.png
+classrs2_1_1max__usable__range__sensor.png
 classrs2_1_1mock__context.png
 classrs2_1_1motion__frame.png
 classrs2_1_1motion__sensor.png
