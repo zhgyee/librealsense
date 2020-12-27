@@ -183,6 +183,8 @@ classrs2_1_1context.html
 classrs2_1_1context-members.html
 classrs2_1_1debug__protocol.html
 classrs2_1_1debug__protocol-members.html
+classrs2_1_1debug__stream__sensor.html
+classrs2_1_1debug__stream__sensor-members.html
 classrs2_1_1decimation__filter.html
 classrs2_1_1decimation__filter-members.html
 classrs2_1_1depth__frame.html
@@ -508,6 +510,7 @@ classrs2_1_1color__sensor.png
 classrs2_1_1colorizer.png
 classrs2_1_1context.png
 classrs2_1_1debug__protocol.png
+classrs2_1_1debug__stream__sensor.png
 classrs2_1_1decimation__filter.png
 classrs2_1_1depth__frame.png
 classrs2_1_1depth__huffman__decoder.png

@@ -648,6 +648,9 @@ $(function() {
 <li>RS2_EXTENSION_DEBUG
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa19840a892edd926bfe4885c433837b5c">rs_types.h</a>
 </li>
+<li>RS2_EXTENSION_DEBUG_STREAM_SENSOR
+: <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aaaf394144b036d3edffa07dba3713dd9d">rs_types.h</a>
+</li>
 <li>RS2_EXTENSION_DECIMATION_FILTER
 : <a class="el" href="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa8c886add9d878381c58b5c2dd94c21c6">rs_types.h</a>
 </li>
@@ -836,6 +839,9 @@ $(function() {
 </li>
 <li>RS2_FORMAT_DISTANCE
 : <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a4b5edfca54e485a9e25299ab249fb3bc">rs_sensor.h</a>
+</li>
+<li>RS2_FORMAT_FG
+: <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a72324fa2723b2df8b807ffbc0eb811b1">rs_sensor.h</a>
 </li>
 <li>RS2_FORMAT_GPIO_RAW
 : <a class="el" href="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a9f5bbb68e05e1fa2e3c453a4ed9432f6">rs_sensor.h</a>
@@ -1085,6 +1091,9 @@ $(function() {
 </li>
 <li>rs2_get_color_correction()
 : <a class="el" href="rs__advanced__mode_8h.html#a96ae1bdc49ed3afd3f4a63d7c51657dc">rs_advanced_mode.h</a>
+</li>
+<li>rs2_get_debug_stream_profiles()
+: <a class="el" href="rs__sensor_8h.html#ab84f2f7cb4ad0cba28eda89b1f5c9508">rs_sensor.h</a>
 </li>
 <li>rs2_get_depth_control()
 : <a class="el" href="rs__advanced__mode_8h.html#a2fe03a83c16724e502eac40d85ec2c4c">rs_advanced_mode.h</a>
@@ -1387,7 +1396,7 @@ $(function() {
 : <a class="el" href="rs__processing__gl_8h.html#aca7b40eb6f12ae3824924d349eb0dea9abfa0d906c9a23f3f8eb68c1fa30482d2">rs_processing_gl.h</a>
 </li>
 <li>rs2_gl_matrix_type
-: <a class="el" href="rs__processing__gl_8h.html#a22e7547931a4fb4ec30bb280cf33061c">rs_processing_gl.h</a>
+: <a class="el" href="rs__processing__gl_8h.html#aca7b40eb6f12ae3824924d349eb0dea9">rs_processing_gl.h</a>
 </li>
 <li>rs2_gl_matrix_type_to_string()
 : <a class="el" href="rs__processing__gl_8h.html#ad67b0b60cefca384299580845503b7c4">rs_processing_gl.h</a>
@@ -1456,7 +1465,7 @@ $(function() {
 : <a class="el" href="rs__frame_8h.html#a9d350db406a3c829278aa946e7d1887a">rs_frame.h</a>
 </li>
 <li>rs2_l500_visual_preset
-: <a class="el" href="rs__option_8h.html#a1691f5c57b1cef5dc929abd213df7ed6">rs_option.h</a>
+: <a class="el" href="rs__option_8h.html#af365d2bc4cd1f7750f28f3886d652e95">rs_option.h</a>
 </li>
 <li>RS2_L500_VISUAL_PRESET_COUNT
 : <a class="el" href="rs__option_8h.html#a1691f5c57b1cef5dc929abd213df7ed6ac7094300cd2de1f6d70b0c19f126a515">rs_option.h</a>
@@ -1501,7 +1510,7 @@ $(function() {
 : <a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs_types.h</a>
 </li>
 <li>rs2_log_severity
-: <a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs_types.h</a>
+: <a class="el" href="rs__types_8h.html#ac77f7e934bf53ca440e9994da42b8f0f">rs_types.h</a>
 </li>
 <li>RS2_LOG_SEVERITY_ALL
 : <a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4a7625c629b007dc6d9341f904562d0aaf">rs_types.h</a>
@@ -1594,7 +1603,7 @@ $(function() {
 : <a class="el" href="rs__types_8h.html#a6a9a55deefe7ca210b16be8e39747c65">rs_types.h</a>
 </li>
 <li>rs2_notification_category
-: <a class="el" href="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8d">rs_types.h</a>
+: <a class="el" href="rs__types_8h.html#a8bbc5b809add835a9cbd394903e2682b">rs_types.h</a>
 </li>
 <li>RS2_NOTIFICATION_CATEGORY_COUNT
 : <a class="el" href="rs__types_8h.html#a5b8efd94f1165be36acea964bf3bdd8dacc2bacb8ab037c935cfe8673dd6ffe4f">rs_types.h</a>
@@ -2002,7 +2011,7 @@ $(function() {
 : <a class="el" href="rs__record__playback_8h.html#a675f9a10db23a55222504519d174cff7">rs_record_playback.h</a>
 </li>
 <li>rs2_playback_status
-: <a class="el" href="rs__record__playback_8h.html#a55a1260b479155bb9a958a0203323d30">rs_record_playback.h</a>
+: <a class="el" href="rs__record__playback_8h.html#a8aa1120310fee39574a7f2d30a34d17f">rs_record_playback.h</a>
 </li>
 <li>rs2_playback_status_changed_callback
 : <a class="el" href="rs__types_8h.html#aceeb89d5eace1d8844c69284913992a1">rs_types.h</a>
@@ -2515,7 +2524,7 @@ $(function() {
 : <a class="el" href="rs__types_8h.html#a8c102778c8a60c0db2c75d2bfe4ae94b">rs_types.h</a>
 </li>
 <li>rs2_timestamp_domain
-: <a class="el" href="rs__frame_8h.html#a55750afe3461ea7748fbb2ef6fb19e8a">rs_frame.h</a>
+: <a class="el" href="rs__frame_8h.html#a41c714ee8ae4cd2af19df47861a0e2ef">rs_frame.h</a>
 </li>
 <li>RS2_TIMESTAMP_DOMAIN_COUNT
 : <a class="el" href="rs__frame_8h.html#a55750afe3461ea7748fbb2ef6fb19e8aa72268ec1f84f2f9bd83cc1fab559c5da">rs_frame.h</a>

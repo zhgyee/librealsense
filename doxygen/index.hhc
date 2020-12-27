@@ -171,6 +171,12 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="debug_protocol"><param name="Local" value="classrs2_1_1debug__protocol.html#a416c5e67541aeadf86dab9ff23cf0dab"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="send_and_receive_raw_data"><param name="Local" value="classrs2_1_1debug__protocol.html#abaf4ca5231cdeb8773e8133040f02d89"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="debug_stream_sensor"><param name="Local" value="classrs2_1_1debug__stream__sensor.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="debug_stream_sensor"><param name="Local" value="classrs2_1_1debug__stream__sensor.html#a6c5037a49d70a1e6e6a448f5b8379289"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="get_debug_stream_profiles"><param name="Local" value="classrs2_1_1debug__stream__sensor.html#ad76f081be87db337d5dbeb8a5b959ae1"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="operator bool"><param name="Local" value="classrs2_1_1debug__stream__sensor.html#a5d6d12a37600e4270eb4a5aacacebd68"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="decimation_filter"><param name="Local" value="classrs2_1_1decimation__filter.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="decimation_filter"><param name="Local" value="classrs2_1_1decimation__filter.html#ab65b89f1e94af6249960e43d925034f1"><param name="ImageNumber" value="11"></OBJECT>
@@ -1391,6 +1397,7 @@
         <UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2::calibrated_sensor"><param name="Local" value="classrs2_1_1calibrated__sensor.html"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2::color_sensor"><param name="Local" value="classrs2_1_1color__sensor.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2::debug_stream_sensor"><param name="Local" value="classrs2_1_1debug__stream__sensor.html"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2::depth_sensor"><param name="Local" value="classrs2_1_1depth__sensor.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2::depth_stereo_sensor"><param name="Local" value="classrs2_1_1depth__stereo__sensor.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -2384,6 +2391,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_FORMAT_INVI"><param name="Local" value="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7afd57ccb8f3f79d0792c5c08b1fbcd695"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_FORMAT_W10"><param name="Local" value="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a06ddbff70540f012a16b7514e17f7a43"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_FORMAT_Z16H"><param name="Local" value="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7adcc4370f480b23880e2df556cef6a06b"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_FORMAT_FG"><param name="Local" value="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a72324fa2723b2df8b807ffbc0eb811b1"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_FORMAT_COUNT"><param name="Local" value="rs__sensor_8h.html#ae04b7887ce35d16dbd9d2d295d23aac7a3b3eef6c57034e8b9472c9166290afd0"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2_stream"><param name="Local" value="rs__sensor_8h.html#a01b4027af33139de861408872dd11b93"><param name="ImageNumber" value="1"></OBJECT>
@@ -2415,6 +2423,7 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2_export_localization_map"><param name="Local" value="rs__sensor_8h.html#a7f522921ea5f9eeb8028c61cab6c8200"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2_format_to_string"><param name="Local" value="rs__sensor_8h.html#a0c571c808d6d2136193afaaa80ce1f81"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2_get_active_streams"><param name="Local" value="rs__sensor_8h.html#af276e645c71569cd1a029dc3599aa9f5"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2_get_debug_stream_profiles"><param name="Local" value="rs__sensor_8h.html#ab84f2f7cb4ad0cba28eda89b1f5c9508"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2_get_depth_scale"><param name="Local" value="rs__sensor_8h.html#a1a900804f73146c29267962d47a7a98e"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2_get_dsm_params"><param name="Local" value="rs__sensor_8h.html#a3739444d2c966b8062633325700d209f"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2_get_extrinsics"><param name="Local" value="rs__sensor_8h.html#a809d707ac64b0674e47cb76ae508eb0a"><param name="ImageNumber" value="11"></OBJECT>
@@ -2678,6 +2687,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_EXTENSION_HDR_MERGE"><param name="Local" value="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa08c5658e1c511432fc2abaa037b8372c"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_EXTENSION_SEQUENCE_ID_FILTER"><param name="Local" value="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa900206ec5ee9a655165d65cd779b4df1"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_EXTENSION_MAX_USABLE_RANGE_SENSOR"><param name="Local" value="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aac822f5217b24629385cabb8be2c94620"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_EXTENSION_DEBUG_STREAM_SENSOR"><param name="Local" value="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aaaf394144b036d3edffa07dba3713dd9d"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="RS2_EXTENSION_COUNT"><param name="Local" value="rs__types_8h.html#a7b6061f32e49fc7c6ff0e5734a380d8aa0b4f59b824f69d456b53638b0f4ddef4"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="rs2_log_severity"><param name="Local" value="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4"><param name="ImageNumber" value="1"></OBJECT>
@@ -3589,6 +3599,12 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="max_usable_range_sensor"><param name="Local" value="classrs2_1_1max__usable__range__sensor.html#a5a9cd617d04705647ea53a35f134fac8"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="get_max_usable_depth_range"><param name="Local" value="classrs2_1_1max__usable__range__sensor.html#a042ac38b9fe6ca005d9d8b2b7f7d9c76"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="operator bool"><param name="Local" value="classrs2_1_1max__usable__range__sensor.html#aeafa0c386b0683c83dc6ff97c34fb54a"><param name="ImageNumber" value="11"></OBJECT>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="debug_stream_sensor"><param name="Local" value="classrs2_1_1debug__stream__sensor.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="debug_stream_sensor"><param name="Local" value="classrs2_1_1debug__stream__sensor.html#a6c5037a49d70a1e6e6a448f5b8379289"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="get_debug_stream_profiles"><param name="Local" value="classrs2_1_1debug__stream__sensor.html#ad76f081be87db337d5dbeb8a5b959ae1"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="operator bool"><param name="Local" value="classrs2_1_1debug__stream__sensor.html#a5d6d12a37600e4270eb4a5aacacebd68"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="operator=="><param name="Local" value="rs__sensor_8hpp.html#aa8d4035318edf8a88846f4cbbdcd1233"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="sensor_from_frame"><param name="Local" value="rs__sensor_8hpp.html#ae4d42d921b84c149511e57f9dc9f804e"><param name="ImageNumber" value="11"></OBJECT>
