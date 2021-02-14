@@ -74,12 +74,35 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af85bc13de7699b2b1bfd4492197f553e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a801300618f0cf17712d07d0e16df6aa8"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__dsm__params.html#a801300618f0cf17712d07d0e16df6aa8">temp_x2</a></td></tr>
 <tr class="separator:a801300618f0cf17712d07d0e16df6aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b37ae43e30d495fa15dd467a4e19b5"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__dsm__params.html#a53b37ae43e30d495fa15dd467a4e19b5">reserved</a> [11]</td></tr>
-<tr class="separator:a53b37ae43e30d495fa15dd467a4e19b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7743b35a8e569b633641d99b68277eb7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__dsm__params.html#a7743b35a8e569b633641d99b68277eb7">mc_h_scale</a></td></tr>
+<tr class="separator:a7743b35a8e569b633641d99b68277eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02179273cf84bf8b29e9273822856f67"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__dsm__params.html#a02179273cf84bf8b29e9273822856f67">mc_v_scale</a></td></tr>
+<tr class="separator:a02179273cf84bf8b29e9273822856f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb602632b5638673579a7be173821dd"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__dsm__params.html#a4fb602632b5638673579a7be173821dd">weeks_since_calibration</a></td></tr>
+<tr class="separator:a4fb602632b5638673579a7be173821dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893d7ecad8a995d06b4ca6ead32f7f98"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__dsm__params.html#a893d7ecad8a995d06b4ca6ead32f7f98">ac_weeks_since_calibaration</a></td></tr>
+<tr class="separator:a893d7ecad8a995d06b4ca6ead32f7f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33ca9ce48c7ed483046e7227562e087"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrs2__dsm__params.html#ac33ca9ce48c7ed483046e7227562e087">reserved</a> [1]</td></tr>
+<tr class="separator:ac33ca9ce48c7ed483046e7227562e087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Video DSM (Digital Sync Module) parameters for calibration (same layout as in FW ac_depth_params) This is the block in MC that converts angles to dimensionless integers reported to MA (using "DSM coefficients"). </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a893d7ecad8a995d06b4ca6ead32f7f98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a893d7ecad8a995d06b4ca6ead32f7f98">&#9670;&nbsp;</a></span>ac_weeks_since_calibaration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char rs2_dsm_params::ac_weeks_since_calibaration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>time (in weeks) between factory calibration and last AC event </p>
+
+</div>
+</div>
 <a id="a3b35aef7f197b34e8075da9092dfb197"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b35aef7f197b34e8075da9092dfb197">&#9670;&nbsp;</a></span>flags</h2>
 
@@ -125,6 +148,36 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7743b35a8e569b633641d99b68277eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7743b35a8e569b633641d99b68277eb7">&#9670;&nbsp;</a></span>mc_h_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rs2_dsm_params::mc_h_scale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the scale factor to horizontal LOS coefficients in MC </p>
+
+</div>
+</div>
+<a id="a02179273cf84bf8b29e9273822856f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02179273cf84bf8b29e9273822856f67">&#9670;&nbsp;</a></span>mc_v_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rs2_dsm_params::mc_v_scale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the scale factor to vertical LOS coefficients in MC </p>
+
+</div>
+</div>
 <a id="a152da28b4139bc4bb006ceb6834e84f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a152da28b4139bc4bb006ceb6834e84f5">&#9670;&nbsp;</a></span>model</h2>
 
@@ -140,14 +193,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a53b37ae43e30d495fa15dd467a4e19b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53b37ae43e30d495fa15dd467a4e19b5">&#9670;&nbsp;</a></span>reserved</h2>
+<a id="ac33ca9ce48c7ed483046e7227562e087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33ca9ce48c7ed483046e7227562e087">&#9670;&nbsp;</a></span>reserved</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned char rs2_dsm_params::reserved[11]</td>
+          <td class="memname">unsigned char rs2_dsm_params::reserved[1]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -241,6 +294,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>MAJOR&lt;&lt;12 | MINOR&lt;&lt;4 | PATCH </p>
+
+</div>
+</div>
+<a id="a4fb602632b5638673579a7be173821dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb602632b5638673579a7be173821dd">&#9670;&nbsp;</a></span>weeks_since_calibration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char rs2_dsm_params::weeks_since_calibration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>time (in weeks) since factory calibration </p>
 
 </div>
 </div>

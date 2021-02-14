@@ -198,7 +198,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ae787b41cea5ada54a07f587e21313f59">RS2_OPTION_NOISE_ESTIMATION</a>, 
 <a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ab5e927e3abe6579b5e1380cc119d2073">RS2_OPTION_ENABLE_IR_REFLECTIVITY</a>, 
-<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419">RS2_OPTION_COUNT</a>
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ac11001971364b90b542941e51ebb911a">RS2_OPTION_AUTO_EXPOSURE_LIMIT</a>, 
+<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2ae9c49926f521ccc7442862fadb1cebfa">RS2_OPTION_AUTO_GAIN_LIMIT</a>, 
+<br />
+&#160;&#160;<a class="el" href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419">RS2_OPTION_COUNT</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a8b9c011f705cfab20c7eaaa7a26040e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines general configuration controls. These can generally be mapped to camera UVC controls, and can be set / queried at any time unless stated otherwise.  <a href="rs__option_8h.html#a8b9c011f705cfab20c7eaaa7a26040e2">More...</a><br /></td></tr>
@@ -244,6 +247,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="rs__option_8h.html#a1691f5c57b1cef5dc929abd213df7ed6a7534cd37e0809cf4d238dda4d8674f01">RS2_L500_VISUAL_PRESET_MAX_RANGE</a>, 
 <a class="el" href="rs__option_8h.html#a1691f5c57b1cef5dc929abd213df7ed6aebc0c9561dc1e32ed93f49c17828c190">RS2_L500_VISUAL_PRESET_SHORT_RANGE</a>, 
+<a class="el" href="rs__option_8h.html#a1691f5c57b1cef5dc929abd213df7ed6ae865cb0789f5d33aa304b364359c9b8c">RS2_L500_VISUAL_PRESET_AUTOMATIC</a>, 
 <a class="el" href="rs__option_8h.html#a1691f5c57b1cef5dc929abd213df7ed6ac7094300cd2de1f6d70b0c19f126a515">RS2_L500_VISUAL_PRESET_COUNT</a>
 <br />
  }</td></tr>
@@ -261,7 +265,8 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a7683bd69c416b07e341d4083eb533b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED! - Use RS2_OPTION_DIGITAL_GAIN instead.  <a href="rs__option_8h.html#a7683bd69c416b07e341d4083eb533b23">More...</a><br /></td></tr>
 <tr class="separator:a7683bd69c416b07e341d4083eb533b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad004a816f59b43bb73a51d78e6de95c0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#ad004a816f59b43bb73a51d78e6de95c0">rs2_digital_gain</a> { <a class="el" href="rs__option_8h.html#ad004a816f59b43bb73a51d78e6de95c0aeb02be84170d4cc853d6266bd2345684">RS2_DIGITAL_GAIN_HIGH</a> = 1, 
+<tr class="memitem:ad004a816f59b43bb73a51d78e6de95c0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__option_8h.html#ad004a816f59b43bb73a51d78e6de95c0">rs2_digital_gain</a> { <a class="el" href="rs__option_8h.html#ad004a816f59b43bb73a51d78e6de95c0a530402f4669c4c609a0c463b5865b296">RS2_DIGITAL_GAIN_AUTO</a> = 0, 
+<a class="el" href="rs__option_8h.html#ad004a816f59b43bb73a51d78e6de95c0aeb02be84170d4cc853d6266bd2345684">RS2_DIGITAL_GAIN_HIGH</a> = 1, 
 <a class="el" href="rs__option_8h.html#ad004a816f59b43bb73a51d78e6de95c0aa2a7f1e9614596982d9ad190ff40d9eb">RS2_DIGITAL_GAIN_LOW</a> = 2
  }</td></tr>
 <tr class="memdesc:ad004a816f59b43bb73a51d78e6de95c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">digital gain for RS2_OPTION_DIGITAL_GAIN option.  <a href="rs__option_8h.html#ad004a816f59b43bb73a51d78e6de95c0">More...</a><br /></td></tr>
@@ -534,7 +539,8 @@ Functions</h2></td></tr>
 
 <p>digital gain for RS2_OPTION_DIGITAL_GAIN option. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad004a816f59b43bb73a51d78e6de95c0aeb02be84170d4cc853d6266bd2345684"></a>RS2_DIGITAL_GAIN_HIGH&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad004a816f59b43bb73a51d78e6de95c0a530402f4669c4c609a0c463b5865b296"></a>RS2_DIGITAL_GAIN_AUTO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad004a816f59b43bb73a51d78e6de95c0aeb02be84170d4cc853d6266bd2345684"></a>RS2_DIGITAL_GAIN_HIGH&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad004a816f59b43bb73a51d78e6de95c0aa2a7f1e9614596982d9ad190ff40d9eb"></a>RS2_DIGITAL_GAIN_LOW&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -586,6 +592,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a1691f5c57b1cef5dc929abd213df7ed6af5d88b40f4e355862d5765efb791f682"></a>RS2_L500_VISUAL_PRESET_LOW_AMBIENT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1691f5c57b1cef5dc929abd213df7ed6a7534cd37e0809cf4d238dda4d8674f01"></a>RS2_L500_VISUAL_PRESET_MAX_RANGE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1691f5c57b1cef5dc929abd213df7ed6aebc0c9561dc1e32ed93f49c17828c190"></a>RS2_L500_VISUAL_PRESET_SHORT_RANGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1691f5c57b1cef5dc929abd213df7ed6ae865cb0789f5d33aa304b364359c9b8c"></a>RS2_L500_VISUAL_PRESET_AUTOMATIC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1691f5c57b1cef5dc929abd213df7ed6ac7094300cd2de1f6d70b0c19f126a515"></a>RS2_L500_VISUAL_PRESET_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>
 </table>
@@ -700,9 +707,9 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a60149cf7438c0ccce8e0e9e05e762baf"></a>RS2_OPTION_EMITTER_ON_OFF&#160;</td><td class="fielddoc"><p>When supported, this option make the camera to switch the emitter state every frame. 0 for disabled, 1 for enabled </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a2462faee03e8b67bbed8922af141b3ee"></a>RS2_OPTION_ZERO_ORDER_POINT_X&#160;</td><td class="fielddoc"><p>Zero order point x </p>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a2462faee03e8b67bbed8922af141b3ee"></a>RS2_OPTION_ZERO_ORDER_POINT_X&#160;</td><td class="fielddoc"><p>Deprecated!!! - Zero order point x </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ab692aa5265ad1eb2451c9871367362c3"></a>RS2_OPTION_ZERO_ORDER_POINT_Y&#160;</td><td class="fielddoc"><p>Zero order point y </p>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ab692aa5265ad1eb2451c9871367362c3"></a>RS2_OPTION_ZERO_ORDER_POINT_Y&#160;</td><td class="fielddoc"><p>Deprecated!!! - Zero order point y </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a1bee769e483ad8d74b5577d9725070c6"></a>RS2_OPTION_LLD_TEMPERATURE&#160;</td><td class="fielddoc"><p>LDD temperature </p>
 </td></tr>
@@ -728,7 +735,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2afefe17b3f147f2aa43ab49c2cefccc39"></a>RS2_OPTION_LED_POWER&#160;</td><td class="fielddoc"><p>Power of the LED (light emitting diode), with 0 meaning LED off </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a603da0cff9de00a2233031fd68d0ba4a"></a>RS2_OPTION_ZERO_ORDER_ENABLED&#160;</td><td class="fielddoc"><p>Toggle Zero-Order mode </p>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a603da0cff9de00a2233031fd68d0ba4a"></a>RS2_OPTION_ZERO_ORDER_ENABLED&#160;</td><td class="fielddoc"><p>DEPRECATED! - Toggle Zero-Order mode </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ac7b0b7463a11096f6d3898f66ff91884"></a>RS2_OPTION_ENABLE_MAP_PRESERVATION&#160;</td><td class="fielddoc"><p>Preserve previous map when starting </p>
 </td></tr>
@@ -776,6 +783,10 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ae787b41cea5ada54a07f587e21313f59"></a>RS2_OPTION_NOISE_ESTIMATION&#160;</td><td class="fielddoc"><p>Noise estimation - indicates the noise on the IR image </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ab5e927e3abe6579b5e1380cc119d2073"></a>RS2_OPTION_ENABLE_IR_REFLECTIVITY&#160;</td><td class="fielddoc"><p>Enables data collection for calculating IR pixel reflectivity </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ac11001971364b90b542941e51ebb911a"></a>RS2_OPTION_AUTO_EXPOSURE_LIMIT&#160;</td><td class="fielddoc"><p>Set and get auto exposure limit in microseconds. Default is 0 which means full exposure range. If the requested exposure limit is greater than frame time, it will be set to frame time at runtime. Setting will not take effect until next streaming session. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2ae9c49926f521ccc7442862fadb1cebfa"></a>RS2_OPTION_AUTO_GAIN_LIMIT&#160;</td><td class="fielddoc"><p>Set and get auto gain limits ranging from 16 to 248. Default is 0 which means full gain. If the requested gain limit is less than 16, it will be set to 16. If the requested gain limit is greater than 248, it will be set to 248. Setting will not take effect until next streaming session. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a8b9c011f705cfab20c7eaaa7a26040e2a4158983f553ef28b078dd7716ce73419"></a>RS2_OPTION_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>

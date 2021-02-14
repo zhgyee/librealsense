@@ -68,7 +68,7 @@ $(function() {
 Macros</h2></td></tr>
 <tr class="memitem:aecb2ba09284ea5b6f988d92e80e0d6da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#aecb2ba09284ea5b6f988d92e80e0d6da">RS2_API_MAJOR_VERSION</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:aecb2ba09284ea5b6f988d92e80e0d6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcbfa1254105b8287ea2843d2861c703"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#abcbfa1254105b8287ea2843d2861c703">RS2_API_MINOR_VERSION</a>&#160;&#160;&#160;41</td></tr>
+<tr class="memitem:abcbfa1254105b8287ea2843d2861c703"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#abcbfa1254105b8287ea2843d2861c703">RS2_API_MINOR_VERSION</a>&#160;&#160;&#160;42</td></tr>
 <tr class="separator:abcbfa1254105b8287ea2843d2861c703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55aad3fa5a01ef70c8986918bd204aa3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a55aad3fa5a01ef70c8986918bd204aa3">RS2_API_PATCH_VERSION</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a55aad3fa5a01ef70c8986918bd204aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,6 +103,10 @@ Functions</h2></td></tr>
 <tr class="separator:a5e72228f2c04c175047bb2838fd8e653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60902977244ec06ee3ed415501745111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a60902977244ec06ee3ed415501745111">rs2_log_to_callback</a> (<a class="el" href="rs__types_8h.html#a312ebc7e1d7f444e97bbb998bee035d4">rs2_log_severity</a> min_severity, <a class="el" href="rs__types_8h.html#af2e6b8b0d242b6dce5ad3ea959153a11">rs2_log_callback_ptr</a> callback, void *arg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a60902977244ec06ee3ed415501745111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53cdcb94294e132b8106399e908acbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#ac53cdcb94294e132b8106399e908acbf">rs2_reset_logger</a> (<a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:ac53cdcb94294e132b8106399e908acbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bd1de88141cb65a957f25e0889b21c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a33bd1de88141cb65a957f25e0889b21c">rs2_enable_rolling_log_file</a> (unsigned max_size, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a33bd1de88141cb65a957f25e0889b21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23509b15772662bcd469bc63ba68d78a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a23509b15772662bcd469bc63ba68d78a">rs2_get_log_message_line_number</a> (<a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a23509b15772662bcd469bc63ba68d78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6e62905642d9a9d295288ce53ec083"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs_8h.html#a8f6e62905642d9a9d295288ce53ec083">rs2_get_log_message_filename</a> (<a class="el" href="rs__types_8h.html#a42a075a6510b680b4f572ef0e6a47d02">rs2_log_message</a> const *msg, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -170,7 +174,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RS2_API_MINOR_VERSION&#160;&#160;&#160;41</td>
+          <td class="memname">#define RS2_API_MINOR_VERSION&#160;&#160;&#160;42</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -321,6 +325,41 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame_ref</td><td>2D depth pixel coordinates (Left-Upper corner origin) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x,y</td><td>2D depth pixel coordinates (Left-Upper corner origin) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33bd1de88141cb65a957f25e0889b21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33bd1de88141cb65a957f25e0889b21c">&#9670;&nbsp;</a></span>rs2_enable_rolling_log_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_enable_rolling_log_file </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>max_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable rolling log file when used with rs2_log_to_file: Upon reaching (max_size/2) bytes, the log will be renamed with an ".old" suffix and a new log created. Any previous .old file will be erased. Must have permissions to remove/rename files in log file directory. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_size</td><td>max file size in megabytes </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
   </table>
   </dd>
@@ -734,6 +773,24 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac53cdcb94294e132b8106399e908acbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53cdcb94294e132b8106399e908acbf">&#9670;&nbsp;</a></span>rs2_reset_logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_reset_logger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
