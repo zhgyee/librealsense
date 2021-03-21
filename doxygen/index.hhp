@@ -173,6 +173,8 @@ classrs2_1_1calibrated__sensor.html
 classrs2_1_1calibrated__sensor-members.html
 classrs2_1_1calibration__change__callback.html
 classrs2_1_1calibration__change__callback-members.html
+classrs2_1_1calibration__change__device.html
+classrs2_1_1calibration__change__device-members.html
 classrs2_1_1color__sensor.html
 classrs2_1_1color__sensor-members.html
 classrs2_1_1colorizer.html
@@ -506,6 +508,7 @@ classrs2_1_1auto__calibrated__device.png
 classrs2_1_1calibrated__device.png
 classrs2_1_1calibrated__sensor.png
 classrs2_1_1calibration__change__callback.png
+classrs2_1_1calibration__change__device.png
 classrs2_1_1color__sensor.png
 classrs2_1_1colorizer.png
 classrs2_1_1context.png
