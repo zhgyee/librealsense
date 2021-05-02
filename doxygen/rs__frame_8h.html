@@ -66,6 +66,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a2549d3b751c3eded77feaf8203097212"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__frame_8h.html#a91f19a01f5bf2abadc30959a8d3109c9">rs2_frame_metadata_value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a2549d3b751c3eded77feaf8203097212">rs2_frame_metadata_value</a></td></tr>
 <tr class="memdesc:a2549d3b751c3eded77feaf8203097212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-Frame-Metadata is the set of read-only properties that might be exposed for each individual frame.  <a href="#a2549d3b751c3eded77feaf8203097212">More...</a><br /></td></tr>
 <tr class="separator:a2549d3b751c3eded77feaf8203097212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd4c239f9a242d694f8b4544c1868d0"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a4fd4c239f9a242d694f8b4544c1868d0">rs2_calib_target_type</a></td></tr>
+<tr class="memdesc:a4fd4c239f9a242d694f8b4544c1868d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibration target type.  <a href="#a4fd4c239f9a242d694f8b4544c1868d0">More...</a><br /></td></tr>
+<tr class="separator:a4fd4c239f9a242d694f8b4544c1868d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -127,6 +130,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a91f19a01f5bf2abadc30959a8d3109c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-Frame-Metadata is the set of read-only properties that might be exposed for each individual frame.  <a href="rs__frame_8h.html#a91f19a01f5bf2abadc30959a8d3109c9">More...</a><br /></td></tr>
 <tr class="separator:a91f19a01f5bf2abadc30959a8d3109c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8743d6d49fdfbcb5f242c32840f2a16"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a> { <a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16a1285e8e1778afd20770a9e3d4bd7891c">RS2_CALIB_TARGET_RECT_GAUSSIAN_DOT_VERTICES</a>, 
+<a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16a29ac1b236df20fe7aa9b60766c3bedbc">RS2_CALIB_TARGET_COUNT</a>
+ }</td></tr>
+<tr class="memdesc:af8743d6d49fdfbcb5f242c32840f2a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibration target type.  <a href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">More...</a><br /></td></tr>
+<tr class="separator:af8743d6d49fdfbcb5f242c32840f2a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -136,6 +144,8 @@ Functions</h2></td></tr>
 <tr class="separator:a22e3cc6be7ab814d93ced5c92057865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a103cb50cf69cd471d26447eb19d97f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a6a103cb50cf69cd471d26447eb19d97f">rs2_frame_metadata_value_to_string</a> (<a class="el" href="rs__frame_8h.html#a91f19a01f5bf2abadc30959a8d3109c9">rs2_frame_metadata_value</a> metadata)</td></tr>
 <tr class="separator:a6a103cb50cf69cd471d26447eb19d97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116fd1d3a60acb0f8bc0439d85eca2f5"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a116fd1d3a60acb0f8bc0439d85eca2f5">rs2_calib_target_type_to_string</a> (<a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a> type)</td></tr>
+<tr class="separator:a116fd1d3a60acb0f8bc0439d85eca2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4144751389183deda852bb4d8545ea34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#af22d2853bf06c8db88605b34c2af4a9f">rs2_metadata_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a4144751389183deda852bb4d8545ea34">rs2_get_frame_metadata</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__frame_8h.html#a91f19a01f5bf2abadc30959a8d3109c9">rs2_frame_metadata_value</a> frame_metadata, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a4144751389183deda852bb4d8545ea34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f123262d90491785a9a90b4540fec3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a78f123262d90491785a9a90b4540fec3">rs2_supports_frame_metadata</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__frame_8h.html#a91f19a01f5bf2abadc30959a8d3109c9">rs2_frame_metadata_value</a> frame_metadata, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -196,10 +206,28 @@ Functions</h2></td></tr>
 <tr class="separator:ad86fa02748806f8864d2261bb4575e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3126dc5f202aa932afba37158d73928"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#ab3126dc5f202aa932afba37158d73928">rs2_pose_frame_get_pose_data</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="structrs2__pose.html">rs2_pose</a> *pose, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:ab3126dc5f202aa932afba37158d73928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c544793f4b910c65766d8039486eaf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#a0c544793f4b910c65766d8039486eaf9">rs2_extract_target_dimensions</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *frame, <a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a> calib_type, float *target_dims, unsigned int target_dims_size, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a0c544793f4b910c65766d8039486eaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exposes RealSense frame functionality for C compilers. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a4fd4c239f9a242d694f8b4544c1868d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd4c239f9a242d694f8b4544c1868d0">&#9670;&nbsp;</a></span>rs2_calib_target_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a>  <a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calibration target type. </p>
+
+</div>
+</div>
 <a id="a2549d3b751c3eded77feaf8203097212"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2549d3b751c3eded77feaf8203097212">&#9670;&nbsp;</a></span>rs2_frame_metadata_value</h2>
 
@@ -233,6 +261,28 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="af8743d6d49fdfbcb5f242c32840f2a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8743d6d49fdfbcb5f242c32840f2a16">&#9670;&nbsp;</a></span>rs2_calib_target_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calibration target type. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af8743d6d49fdfbcb5f242c32840f2a16a1285e8e1778afd20770a9e3d4bd7891c"></a>RS2_CALIB_TARGET_RECT_GAUSSIAN_DOT_VERTICES&#160;</td><td class="fielddoc"><p>Flat rectangle with vertices as the centers of Gaussian dots </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af8743d6d49fdfbcb5f242c32840f2a16a29ac1b236df20fe7aa9b60766c3bedbc"></a>RS2_CALIB_TARGET_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a91f19a01f5bf2abadc30959a8d3109c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91f19a01f5bf2abadc30959a8d3109c9">&#9670;&nbsp;</a></span>rs2_frame_metadata_value</h2>
 
@@ -593,6 +643,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a116fd1d3a60acb0f8bc0439d85eca2f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a116fd1d3a60acb0f8bc0439d85eca2f5">&#9670;&nbsp;</a></span>rs2_calib_target_type_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* rs2_calib_target_type_to_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aeccdf7946db40b7d37b9c83b034586cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeccdf7946db40b7d37b9c83b034586cb">&#9670;&nbsp;</a></span>rs2_depth_frame_get_units()</h2>
 
@@ -747,6 +815,62 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>returns reference to a frame existing within the composite frame If you wish to keep this frame after the composite is released, you need to call acquire_ref Otherwise the resulting frame lifetime is bound by owning composite frame </dd></dl>
+
+</div>
+</div>
+<a id="a0c544793f4b910c65766d8039486eaf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c544793f4b910c65766d8039486eaf9">&#9670;&nbsp;</a></span>rs2_extract_target_dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rs2_extract_target_dimensions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a>&#160;</td>
+          <td class="paramname"><em>calib_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>target_dims</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>target_dims_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Extract the target dimensions on the specific target </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Left or right camera frame of specified size based on the target type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">calib_type</td><td>Calibration target type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_dims_size</td><td>Target dimension array size </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">target_dims</td><td>The array to hold the result target dimensions calculated. For type RS2_CALIB_TARGET_RECT_GAUSSIAN_DOT_VERTICES, the four rectangle side sizes in pixels with the order of top, bottom, left, and right </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

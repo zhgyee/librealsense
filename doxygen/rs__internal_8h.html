@@ -47,7 +47,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">rs_internal.h File Reference</div>  </div>
 </div><!--header-->
@@ -247,6 +248,13 @@ Functions</h2></td></tr>
 <tr class="memitem:aa863c796e50269ddcd361068ca65773a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#aa863c796e50269ddcd361068ca65773a">rs2_terminal_parse_response</a> (<a class="el" href="rs__types_8h.html#ae539ff4ff5dfac7f5eeaf4ac4ca4aa25">rs2_terminal_parser</a> *terminal_parser, const char *command, unsigned int size_of_command, const void *response, unsigned int size_of_response, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="memdesc:aa863c796e50269ddcd361068ca65773a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses terminal response via RealSense terminal parser.  <a href="#aa863c796e50269ddcd361068ca65773a">More...</a><br /></td></tr>
 <tr class="separator:aa863c796e50269ddcd361068ca65773a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a773da90d5c9fe0d4e31909a2f1eb7753"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#a773da90d5c9fe0d4e31909a2f1eb7753">signed_fw_size</a> = 0x18031C</td></tr>
+<tr class="separator:a773da90d5c9fe0d4e31909a2f1eb7753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad144464259cd25ffb7ec49aa0c2b83bd"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__internal_8h.html#ad144464259cd25ffb7ec49aa0c2b83bd">unsigned_fw_size</a> = 0x200000</td></tr>
+<tr class="separator:ad144464259cd25ffb7ec49aa0c2b83bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exposes RealSense internal functionality for C compilers. </p>
@@ -2510,6 +2518,36 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>answer parsed </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a773da90d5c9fe0d4e31909a2f1eb7753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773da90d5c9fe0d4e31909a2f1eb7753">&#9670;&nbsp;</a></span>signed_fw_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int signed_fw_size = 0x18031C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Firmware size constants </p>
+
+</div>
+</div>
+<a id="ad144464259cd25ffb7ec49aa0c2b83bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad144464259cd25ffb7ec49aa0c2b83bd">&#9670;&nbsp;</a></span>unsigned_fw_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int unsigned_fw_size = 0x200000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
