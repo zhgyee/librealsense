@@ -71,10 +71,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a489cda3942c3bbac23934a3f9d87efd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c43415d74bcb09e6ce126ae4b5c362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#aa8c43415d74bcb09e6ce126ae4b5c362">operator()</a> (<a class="el" href="classrs2_1_1frame.html">frame</a> f) const</td></tr>
 <tr class="separator:aa8c43415d74bcb09e6ce126ae4b5c362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4bc6cd29db5d616f5e2947d7a185a3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#aad4bc6cd29db5d616f5e2947d7a185a3">size</a> () const</td></tr>
+<tr class="separator:aad4bc6cd29db5d616f5e2947d7a185a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f14537ad04442d54dff7d49c1bd4c5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#a34f14537ad04442d54dff7d49c1bd4c5">capacity</a> () const</td></tr>
 <tr class="separator:a34f14537ad04442d54dff7d49c1bd4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab738971563cfcb207105040361a6e704"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#ab738971563cfcb207105040361a6e704">keep_frames</a> () const</td></tr>
 <tr class="separator:ab738971563cfcb207105040361a6e704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76fafa21041eb31fe6c6f7153be148c0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrs2_1_1frame__queue.html#a76fafa21041eb31fe6c6f7153be148c0">get</a> ()</td></tr>
+<tr class="separator:a76fafa21041eb31fe6c6f7153be148c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adea0fab3a1f34f325df856d6de24dbee"></a>
@@ -198,6 +202,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a76fafa21041eb31fe6c6f7153be148c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76fafa21041eb31fe6c6f7153be148c0">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a>&gt; rs2::frame_queue::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Provide a getter for underlying rs2_frame_queue object. Used to invoke C-API that require C-type parameters in signature </p><dl class="section return"><dt>Returns</dt><dd>keeping frames </dd></dl>
+
+</div>
+</div>
 <a id="ab738971563cfcb207105040361a6e704"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab738971563cfcb207105040361a6e704">&#9670;&nbsp;</a></span>keep_frames()</h2>
 
@@ -283,6 +313,32 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if new frame was stored to f </dd></dl>
+
+</div>
+</div>
+<a id="aad4bc6cd29db5d616f5e2947d7a185a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad4bc6cd29db5d616f5e2947d7a185a3">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t rs2::frame_queue::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the capacity of the queue </p><dl class="section return"><dt>Returns</dt><dd>capacity size </dd></dl>
 
 </div>
 </div>

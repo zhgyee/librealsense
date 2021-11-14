@@ -114,6 +114,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad67b0b60cefca384299580845503b7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13896604a9a543f9d3ffff2351573f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__processing__gl_8h.html#ac13896604a9a543f9d3ffff2351573f1">rs2_gl_create_yuy_decoder</a> (int api_version, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:ac13896604a9a543f9d3ffff2351573f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af547849b9cd7b263d36923d3826b195f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__processing__gl_8h.html#af547849b9cd7b263d36923d3826b195f">rs2_gl_create_y411_decoder</a> (int api_version, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:af547849b9cd7b263d36923d3826b195f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabef0c03482665c7162a4441a7eb1085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__processing__gl_8h.html#aabef0c03482665c7162a4441a7eb1085">rs2_gl_set_matrix</a> (<a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a> *block, <a class="el" href="rs__processing__gl_8h.html#aca7b40eb6f12ae3824924d349eb0dea9">rs2_gl_matrix_type</a> type, float *m4x4, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:aabef0c03482665c7162a4441a7eb1085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada48053eea2e308622dbc3fb44fec156"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__processing__gl_8h.html#ada48053eea2e308622dbc3fb44fec156">rs2_gl_is_frame_extendable_to</a> (const <a class="el" href="rs__types_8h.html#af280a50e5484323c1b20b76eda3d370d">rs2_frame</a> *f, <a class="el" href="rs__processing__gl_8h.html#a1a6d5418356247ee2db88b285bf82b85">rs2_gl_extension</a> extension_type, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -578,6 +580,42 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Creates Upload processing block This object can explicitly copy frames from the CPU to the GPU This allows pre-emptively upload frame to the GPU on a background thread To be used directly in future GPU processing </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">api_version</td><td>Users are expected to pass their version of <code>RS2_API_VERSION</code> to make sure they are running the correct librealsense version. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af547849b9cd7b263d36923d3826b195f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af547849b9cd7b263d36923d3826b195f">&#9670;&nbsp;</a></span>rs2_gl_create_y411_decoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rs__types_8h.html#af50408eba1d9935d29eb72553ae53dd0">rs2_processing_block</a>* rs2_gl_create_y411_decoder </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>api_version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates y411 decoder processing block. This block accepts raw y411 frames and outputs frames in RGB8. <a href="https://www.fourcc.org/pixel-format/yuv-y411/">https://www.fourcc.org/pixel-format/yuv-y411/</a> Y411 is disguised as NV12 to allow Linux compatibility. Both are 12bpp encodings that allow high-resolution modes in the camera to still fit within the USB3 limits (YUY wasn't enough).</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">api_version</td><td>Users are expected to pass their version of <code>RS2_API_VERSION</code> to make sure they are running the correct librealsense version. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>if non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>

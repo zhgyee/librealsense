@@ -351,6 +351,8 @@ classrs2_1_1video__stream__profile.html
 classrs2_1_1video__stream__profile-members.html
 classrs2_1_1wheel__odometer.html
 classrs2_1_1wheel__odometer-members.html
+classrs2_1_1y411__decoder.html
+classrs2_1_1y411__decoder-members.html
 classrs2_1_1yuy__decoder.html
 classrs2_1_1yuy__decoder-members.html
 classrs2_1_1zero__order__invalidation.html
@@ -370,6 +372,8 @@ classrs2_1_1gl_1_1pointcloud__renderer.html
 classrs2_1_1gl_1_1pointcloud__renderer-members.html
 classrs2_1_1gl_1_1uploader.html
 classrs2_1_1gl_1_1uploader-members.html
+classrs2_1_1gl_1_1y411__decoder.html
+classrs2_1_1gl_1_1y411__decoder-members.html
 classrs2_1_1gl_1_1yuy__decoder.html
 classrs2_1_1gl_1_1yuy__decoder-members.html
 namespacers2_1_1internal.html
@@ -466,6 +470,7 @@ functions_vars_w.html
 functions_vars_x.html
 functions_vars_y.html
 functions_vars_z.html
+functions_type.html
 functions_rela.html
 files.html
 globals.html
@@ -535,7 +540,6 @@ classrs2_1_1frame.png
 classrs2_1_1frame__callback.png
 classrs2_1_1frame__processor__callback.png
 classrs2_1_1frameset.png
-classrs2_1_1frameset_1_1iterator.png
 classrs2_1_1hdr__merge.png
 classrs2_1_1hole__filling__filter.png
 classrs2_1_1log__callback.png
@@ -579,6 +583,7 @@ classrs2_1_1update__progress__callback.png
 classrs2_1_1video__frame.png
 classrs2_1_1video__stream__profile.png
 classrs2_1_1wheel__odometer.png
+classrs2_1_1y411__decoder.png
 classrs2_1_1yuy__decoder.png
 classrs2_1_1zero__order__invalidation.png
 classrs2_1_1gl_1_1align.png
@@ -588,5 +593,6 @@ classrs2_1_1gl_1_1gpu__frame.png
 classrs2_1_1gl_1_1pointcloud.png
 classrs2_1_1gl_1_1pointcloud__renderer.png
 classrs2_1_1gl_1_1uploader.png
+classrs2_1_1gl_1_1y411__decoder.png
 classrs2_1_1gl_1_1yuy__decoder.png
 classrs400_1_1advanced__mode.png

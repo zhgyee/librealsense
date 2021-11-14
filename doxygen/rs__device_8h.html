@@ -157,6 +157,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5b62c5ba2332cc43fcd79a02320e5fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd01ad94180743706d6f1ae138d67e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a8cd01ad94180743706d6f1ae138d67e8">rs2_update_firmware_unsigned_cpp</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, const void *fw_image, int fw_image_size, <a class="el" href="structrs2__update__progress__callback.html">rs2_update_progress_callback</a> *callback, int update_mode, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:a8cd01ad94180743706d6f1ae138d67e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d0edde60c63e77a2cbc9f9e4037fdc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a82d0edde60c63e77a2cbc9f9e4037fdc">rs2_check_firmware_compatibility</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, const void *fw_image, int fw_image_size, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a82d0edde60c63e77a2cbc9f9e4037fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdf44a52bfd3ca88a6730e1383a50369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#acdf44a52bfd3ca88a6730e1383a50369">rs2_update_firmware_unsigned</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, const void *fw_image, int fw_image_size, <a class="el" href="rs__types_8h.html#a60a099c83ec9152eafd74ed3455d7278">rs2_update_progress_callback_ptr</a> callback, void *client_data, int update_mode, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:acdf44a52bfd3ca88a6730e1383a50369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76fbaef56d03525a5fd147e78123508f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a76fbaef56d03525a5fd147e78123508f">rs2_enter_update_state</a> (const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
@@ -187,6 +189,18 @@ Functions</h2></td></tr>
 <tr class="separator:a39e27e7134093a89567ff4f95fb62e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2a9cf695704530f2ad3b4b8b2a1eb1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#af2a9cf695704530f2ad3b4b8b2a1eb1a">rs2_load_json</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *dev, const void *json_content, unsigned content_size, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
 <tr class="separator:af2a9cf695704530f2ad3b4b8b2a1eb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00446694312533140746bf2faf452786"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a00446694312533140746bf2faf452786">rs2_run_focal_length_calibration_cpp</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *left_queue, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *right_queue, float target_width, float target_height, int adjust_both_sides, float *ratio, float *angle, <a class="el" href="structrs2__update__progress__callback.html">rs2_update_progress_callback</a> *progress_callback, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a00446694312533140746bf2faf452786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ecdc88e8950e4466c3b0145d0f5289"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a67ecdc88e8950e4466c3b0145d0f5289">rs2_run_focal_length_calibration</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *left_queue, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *right_queue, float target_width, float target_height, int adjust_both_sides, float *ratio, float *angle, <a class="el" href="rs__types_8h.html#a60a099c83ec9152eafd74ed3455d7278">rs2_update_progress_callback_ptr</a> callback, void *client_data, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a67ecdc88e8950e4466c3b0145d0f5289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89aa722ca9e79f56764eca2926bb474f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#a89aa722ca9e79f56764eca2926bb474f">rs2_run_uv_map_calibration_cpp</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *left_queue, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *color_queue, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *depth_queue, int py_px_only, float *health, int health_size, <a class="el" href="structrs2__update__progress__callback.html">rs2_update_progress_callback</a> *progress_callback, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:a89aa722ca9e79f56764eca2926bb474f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa842c47629780ebe7e995c548f2faaee"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#aa842c47629780ebe7e995c548f2faaee">rs2_run_uv_map_calibration</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *left_queue, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *color_queue, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *depth_queue, int py_px_only, float *health, int health_size, <a class="el" href="rs__types_8h.html#a60a099c83ec9152eafd74ed3455d7278">rs2_update_progress_callback_ptr</a> callback, void *client_data, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:aa842c47629780ebe7e995c548f2faaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4702bf5c632197485bd2f21323ff7f4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#af4702bf5c632197485bd2f21323ff7f4">rs2_calculate_target_z_cpp</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *queue1, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *queue2, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *queue3, float target_width, float target_height, <a class="el" href="structrs2__update__progress__callback.html">rs2_update_progress_callback</a> *callback, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:af4702bf5c632197485bd2f21323ff7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac382ee9f0e05e70710b98eae05a7b2de"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__device_8h.html#ac382ee9f0e05e70710b98eae05a7b2de">rs2_calculate_target_z</a> (<a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *device, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *queue1, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *queue2, <a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *queue3, float target_width, float target_height, <a class="el" href="rs__types_8h.html#a60a099c83ec9152eafd74ed3455d7278">rs2_update_progress_callback_ptr</a> progress_callback, void *client_data, <a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **error)</td></tr>
+<tr class="separator:ac382ee9f0e05e70710b98eae05a7b2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exposes RealSense device functionality for C compilers. </p>
@@ -345,6 +359,161 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ac382ee9f0e05e70710b98eae05a7b2de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac382ee9f0e05e70710b98eae05a7b2de">&#9670;&nbsp;</a></span>rs2_calculate_target_z()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rs2_calculate_target_z </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>queue1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>queue2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>queue3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a60a099c83ec9152eafd74ed3455d7278">rs2_update_progress_callback_ptr</a>&#160;</td>
+          <td class="paramname"><em>progress_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>client_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculate Z for calibration target - distance to the target's plane </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue1-3</td><td>A frame queue of raw images used to calculate and extract the distance to a predefined target pattern. For D400 the indexes 1-3 correspond to Left IR, Right IR and Depth with only the Left IR being used </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_width</td><td>Expected target's horizontal dimension in mm </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_height</td><td>Expected target's vertical dimension in mm </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Optional callback for reporting progress status </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">client_data</td><td>Optional client data for the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Calculated distance (Z) to target in millimeter, or negative number if failed </dd></dl>
+
+</div>
+</div>
+<a id="af4702bf5c632197485bd2f21323ff7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4702bf5c632197485bd2f21323ff7f4">&#9670;&nbsp;</a></span>rs2_calculate_target_z_cpp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float rs2_calculate_target_z_cpp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>queue1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>queue2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>queue3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrs2__update__progress__callback.html">rs2_update_progress_callback</a> *&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculate Z for calibration target - distance to the target's plane </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queue1-3</td><td>A frame queue of raw images used to calculate and extract the distance to a predefined target pattern. For D400 the indexes 1-3 correspond to Left IR, Right IR and Depth with only the Left IR being used </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_width</td><td>Expected target's horizontal dimension in mm </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_height</td><td>Expected target's vertical dimension in mm </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Optional callback for reporting progress status </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Calculated distance (Z) to target in millimeter, or negative number if failed </dd></dl>
+
+</div>
+</div>
 <a id="a58cb25a338a657086410d7c34bf3b7a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58cb25a338a657086410d7c34bf3b7a6">&#9670;&nbsp;</a></span>rs2_calibration_status_to_string()</h2>
 
@@ -378,6 +547,56 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82d0edde60c63e77a2cbc9f9e4037fdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d0edde60c63e77a2cbc9f9e4037fdc">&#9670;&nbsp;</a></span>rs2_check_firmware_compatibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rs2_check_firmware_compatibility </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>fw_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fw_image_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks if the device and the provided firmware image are compatible </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>Device to update </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_image</td><td>Firmware image buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fw_image_size</td><td>Firmware image buffer size in bytes </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero if the firmware is compatible with the device and 0 otherwise </dd></dl>
 
 </div>
 </div>
@@ -1226,6 +1445,195 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a67ecdc88e8950e4466c3b0145d0f5289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ecdc88e8950e4466c3b0145d0f5289">&#9670;&nbsp;</a></span>rs2_run_focal_length_calibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a>* rs2_run_focal_length_calibration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>left_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>right_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>adjust_both_sides</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ratio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a60a099c83ec9152eafd74ed3455d7278">rs2_update_progress_callback_ptr</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>client_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run target-based focal length calibration </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>device to calibrate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left_queue</td><td>container for left IR frames with resoluton of 1280x720 and the target in the center of 320x240 pixels ROI. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right_queue</td><td>container for right IR frames with resoluton of 1280x720 and the target in the center of 320x240 pixels ROI </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_width</td><td>the rectangle width in mm on the target </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_height</td><td>the rectangle height in mm on the target </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adjust_both_sides</td><td>1 for adjusting both left and right camera calibration tables, and 0 for adjusting right camera calibraion table only </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ratio</td><td>the corrected ratio from the calibration </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">angle</td><td>the target's tilt angle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Optional callback for update progress notifications, the progress value is normailzed to 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">client_data</td><td>Optional client data for the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New calibration table </dd></dl>
+
+</div>
+</div>
+<a id="a00446694312533140746bf2faf452786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00446694312533140746bf2faf452786">&#9670;&nbsp;</a></span>rs2_run_focal_length_calibration_cpp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a>* rs2_run_focal_length_calibration_cpp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>left_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>right_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>adjust_both_sides</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ratio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrs2__update__progress__callback.html">rs2_update_progress_callback</a> *&#160;</td>
+          <td class="paramname"><em>progress_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run target-based focal length calibration </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>device to calibrate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left_queue</td><td>container for left IR frames with resoluton of 1280x720 and the target in the center of 320x240 pixels ROI. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">right_queue</td><td>container for right IR frames with resoluton of 1280x720 and the target in the center of 320x240 pixels ROI </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_width</td><td>the rectangle width in mm on the target </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_height</td><td>the rectangle height in mm on the target </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adjust_both_sides</td><td>1 for adjusting both left and right camera calibration tables, and 0 for adjusting right camera calibraion table only </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ratio</td><td>the corrected ratio from the calibration </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">angle</td><td>the target's tilt angle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Optional callback for update progress notifications, the progress value is normailzed to 1 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New calibration table </dd></dl>
+
+</div>
+</div>
 <a id="a5965c8669dda8669c5fe4292f897def9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5965c8669dda8669c5fe4292f897def9">&#9670;&nbsp;</a></span>rs2_run_on_chip_calibration()</h2>
 
@@ -1433,7 +1841,7 @@ Functions</h2></td></tr>
 <p>This will adjust camera absolute distance to flat target. User needs to enter the known ground truth. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ground_truth_mm</td><td>Ground truth in mm must be between 60 and 10000 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">json_content</td><td>Json string to configure tare calibration parameters: { "average_step_count": 20, "step count": 20, "accuracy": 2, "scan parameter": 0, "data sampling": 0 } average step count - number of frames to average, must be between 1 - 30, default = 20 step count - max iteration steps, must be between 5 - 30, default = 10 accuracy - Subpixel accuracy level, value can be one of: Very high = 0 (0.025%), High = 1 (0.05%), Medium = 2 (0.1%), Low = 3 (0.2%), Default = Very high (0.025%), default is very high (0.025%) scan_parameter - value can be one of: Py scan (default) = 0, Rx scan = 1 data_sampling - value can be one of:polling data sampling = 0, interrupt data sampling = 1 if json is nullptr it will be ignored and calibration will use the default parameters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">json_content</td><td>Json string to configure tare calibration parameters: { "average_step_count": 20, "step count": 20, "accuracy": 2, "scan parameter": 0, "data sampling": 0 } average step count - number of frames to average, must be between 1 - 30, default = 20 step count - max iteration steps, must be between 5 - 30, default = 10 accuracy - Subpixel accuracy level, value can be one of: Very high = 0 (0.025%), High = 1 (0.05%), Medium = 2 (0.1%), Low = 3 (0.2%), Default = Very high (0.025%), default is Medium scan_parameter - value can be one of: Py scan (default) = 0, Rx scan = 1 data_sampling - value can be one of:polling data sampling = 0, interrupt data sampling = 1 if json is nullptr it will be ignored and calibration will use the default parameters </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">content_size</td><td>Json string size if its 0 the json will be ignored and calibration will use the default parameters </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Optional callback for update progress notifications, the progress value is normailzed to 1 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">client_data</td><td>Optional client data for the callback </td></tr>
@@ -1503,10 +1911,185 @@ Functions</h2></td></tr>
 <p>This will adjust camera absolute distance to flat target. User needs to enter the known ground truth. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ground_truth_mm</td><td>Ground truth in mm must be between 60 and 10000 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">json_content</td><td>Json string to configure tare calibration parameters: { "average step count": 20, "step count": 20, "accuracy": 2, "scan parameter": 0, "data sampling": 0 } average step count - number of frames to average, must be between 1 - 30, default = 20 step count - max iteration steps, must be between 5 - 30, default = 10 accuracy - Subpixel accuracy level, value can be one of: Very high = 0 (0.025%), High = 1 (0.05%), Medium = 2 (0.1%), Low = 3 (0.2%), Default = Very high (0.025%), default is very high (0.025%) scan_parameter - value can be one of: Py scan (default) = 0, Rx scan = 1 data_sampling - value can be one of:polling data sampling = 0, interrupt data sampling = 1 if json is nullptr it will be ignored and calibration will use the default parameters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">json_content</td><td>Json string to configure tare calibration parameters: { "average step count": 20, "step count": 20, "accuracy": 2, "scan parameter": 0, "data sampling": 0 } average step count - number of frames to average, must be between 1 - 30, default = 20 step count - max iteration steps, must be between 5 - 30, default = 10 accuracy - Subpixel accuracy level, value can be one of: Very high = 0 (0.025%), High = 1 (0.05%), Medium = 2 (0.1%), Low = 3 (0.2%), Default = Very high (0.025%), default is Medium scan_parameter - value can be one of: Py scan (default) = 0, Rx scan = 1 data_sampling - value can be one of:polling data sampling = 0, interrupt data sampling = 1 if json is nullptr it will be ignored and calibration will use the default parameters </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">content_size</td><td>Json string size if its 0 the json will be ignored and calibration will use the default parameters </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Optional callback to get progress notifications </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>Timeout in ms (use 5000 msec unless instructed otherwise) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New calibration table </dd></dl>
+
+</div>
+</div>
+<a id="aa842c47629780ebe7e995c548f2faaee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa842c47629780ebe7e995c548f2faaee">&#9670;&nbsp;</a></span>rs2_run_uv_map_calibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a>* rs2_run_uv_map_calibration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>left_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>color_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>depth_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py_px_only</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>health</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>health_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a60a099c83ec9152eafd74ed3455d7278">rs2_update_progress_callback_ptr</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>client_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Depth-RGB UV-Map calibration. Applicable for D400 cameras </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>device to calibrate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left_queue</td><td>the frame queue for left IR frames with resoluton of 1280x720 and the target captured in the center of 320x240 pixels ROI. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color_queue</td><td>the frame queue for RGB frames with resoluton of 1280x720 and the target in the center of 320x240 pixels ROI </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">depth_queue</td><td>the frame queue for Depth frames with resoluton of 1280x720 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">py_px_only</td><td>1 for calibrating color camera py and px only, 1 for calibrating color camera py, px, fy, and fx. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">health</td><td>The four health check numbers in order of px, py, fx, fy for the calibration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">health_size</td><td>number of health check numbers, which is 4 by default </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Optional callback for update progress notifications, the progress value is normailzed to 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">client_data</td><td>Optional client data for the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>New calibration table </dd></dl>
+
+</div>
+</div>
+<a id="a89aa722ca9e79f56764eca2926bb474f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89aa722ca9e79f56764eca2926bb474f">&#9670;&nbsp;</a></span>rs2_run_uv_map_calibration_cpp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="rs__types_8h.html#ab811c9b19a9d7c4608062eb12a6e3f2e">rs2_raw_data_buffer</a>* rs2_run_uv_map_calibration_cpp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#a6b12b0e578c567223a99b0c0f2b67a25">rs2_device</a> *&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>left_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>color_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ae87f9e6ffe6783cb96772def4866a7d8">rs2_frame_queue</a> *&#160;</td>
+          <td class="paramname"><em>depth_queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>py_px_only</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>health</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>health_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrs2__update__progress__callback.html">rs2_update_progress_callback</a> *&#160;</td>
+          <td class="paramname"><em>progress_callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rs__types_8h.html#ab2e9b1e9fd4b0cb3ed42f33f0c9dec03">rs2_error</a> **&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Depth-RGB UV-Map calibration. Applicable for D400 cameras </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>device to calibrate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">left_queue</td><td>the frame queue for left IR frames with resoluton of 1280x720 and the target captured in the center of 320x240 pixels ROI. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color_queue</td><td>the frame queue for RGB frames with resoluton of 1280x720 and the target in the center of 320x240 pixels ROI </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">depth_queue</td><td>the frame queue for Depth frames with resoluton of 1280x720 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">py_px_only</td><td>1 for calibrating color camera py and px only, 1 for calibrating color camera py, px, fy, and fx. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">health</td><td>The four health check numbers in order of px, py, fx, fy for the calibration </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">health_size</td><td>number of health check numbers, which is 4 by default </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Optional callback for update progress notifications, the progress value is normailzed to 1 </td></tr>
   </table>
   </dd>
 </dl>

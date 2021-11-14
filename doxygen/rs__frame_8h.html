@@ -131,6 +131,8 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:a91f19a01f5bf2abadc30959a8d3109c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-Frame-Metadata is the set of read-only properties that might be exposed for each individual frame.  <a href="rs__frame_8h.html#a91f19a01f5bf2abadc30959a8d3109c9">More...</a><br /></td></tr>
 <tr class="separator:a91f19a01f5bf2abadc30959a8d3109c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8743d6d49fdfbcb5f242c32840f2a16"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">rs2_calib_target_type</a> { <a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16a1285e8e1778afd20770a9e3d4bd7891c">RS2_CALIB_TARGET_RECT_GAUSSIAN_DOT_VERTICES</a>, 
+<a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16a998cdaffbd2e6faa19c1f66ade8d2535">RS2_CALIB_TARGET_ROI_RECT_GAUSSIAN_DOT_VERTICES</a>, 
+<a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16abb97c325fc0080c40363491ad82a2e95">RS2_CALIB_TARGET_POS_GAUSSIAN_DOT_VERTICES</a>, 
 <a class="el" href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16a29ac1b236df20fe7aa9b60766c3bedbc">RS2_CALIB_TARGET_COUNT</a>
  }</td></tr>
 <tr class="memdesc:af8743d6d49fdfbcb5f242c32840f2a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibration target type.  <a href="rs__frame_8h.html#af8743d6d49fdfbcb5f242c32840f2a16">More...</a><br /></td></tr>
@@ -276,6 +278,10 @@ Functions</h2></td></tr>
 <p>Calibration target type. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af8743d6d49fdfbcb5f242c32840f2a16a1285e8e1778afd20770a9e3d4bd7891c"></a>RS2_CALIB_TARGET_RECT_GAUSSIAN_DOT_VERTICES&#160;</td><td class="fielddoc"><p>Flat rectangle with vertices as the centers of Gaussian dots </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af8743d6d49fdfbcb5f242c32840f2a16a998cdaffbd2e6faa19c1f66ade8d2535"></a>RS2_CALIB_TARGET_ROI_RECT_GAUSSIAN_DOT_VERTICES&#160;</td><td class="fielddoc"><p>Flat rectangle with vertices as the centers of Gaussian dots with target inside the ROI </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af8743d6d49fdfbcb5f242c32840f2a16abb97c325fc0080c40363491ad82a2e95"></a>RS2_CALIB_TARGET_POS_GAUSSIAN_DOT_VERTICES&#160;</td><td class="fielddoc"><p>Positions of vertices as the centers of Gaussian dots with target inside the ROI </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af8743d6d49fdfbcb5f242c32840f2a16a29ac1b236df20fe7aa9b60766c3bedbc"></a>RS2_CALIB_TARGET_COUNT&#160;</td><td class="fielddoc"><p>Number of enumeration values. Not a valid input: intended to be used in for-loops. </p>
 </td></tr>
@@ -865,8 +871,8 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>Left or right camera frame of specified size based on the target type </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">calib_type</td><td>Calibration target type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">target_dims_size</td><td>Target dimension array size </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">target_dims</td><td>The array to hold the result target dimensions calculated. For type RS2_CALIB_TARGET_RECT_GAUSSIAN_DOT_VERTICES, the four rectangle side sizes in pixels with the order of top, bottom, left, and right </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">target_dims</td><td>The array to hold the result target dimensions calculated. For type RS2_CALIB_TARGET_RECT_GAUSSIAN_DOT_VERTICES and RS2_CALIB_TARGET_ROI_RECT_GAUSSIAN_DOT_VERTICES, the four rectangle side sizes in pixels with the order of top, bottom, left, and right For type RS2_CALIB_TARGET_POS_GAUSSIAN_DOT_VERTICES, the four vertices coordinates in pixels with the order of top, bottom, left, and right </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target_dims_size</td><td>Target dimension array size. 4 for RS2_CALIB_TARGET_RECT_GAUSSIAN_DOT_VERTICES and 8 for RS2_CALIB_TARGET_POS_GAUSSIAN_DOT_VERTICES. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">error</td><td>If non-null, receives any error that occurs during this call, otherwise, errors are ignored </td></tr>
   </table>
   </dd>
