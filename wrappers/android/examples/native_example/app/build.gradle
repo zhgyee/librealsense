@@ -29,7 +29,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     testImplementation 'junit:junit:4.12'
@@ -50,10 +50,11 @@ configurations {
 }
 
 dependencies {
-    def version = '2.+'
-    downloadSo 'com.intel.realsense:librealsense:' + version + '@aar'
-    implementation 'com.intel.realsense:librealsense:' + version + '@aar'
-    downloadHeader 'com.intel.realsense:librealsense:' + version + '@zip'
+//    def version = '2.+'
+//    downloadSo 'com.intel.realsense:librealsense:' + version + '@aar'
+//    implementation 'com.intel.realsense:librealsense:' + version + '@aar'
+//    downloadHeader 'com.intel.realsense:librealsense:' + version + '@zip'
+    downloadSo fileTree('/home/joey/workspace/cv/librealsense/wrappers/android/librealsense/build/outputs/aar/librealsense-debug.aar')
 }
 
 task extractHeaders(type: Sync) {
@@ -69,7 +70,7 @@ task extractSo(type: Sync) {
     into "$buildDir/"
 }
 
-preBuild.dependsOn(extractHeaders)
+//preBuild.dependsOn(extractHeaders)
 preBuild.dependsOn(extractSo)
 
 
