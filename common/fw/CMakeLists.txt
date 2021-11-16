@@ -83,11 +83,11 @@ function(target_binary url version sha1 symbol ext)
   target_sources(${PROJECT_NAME} PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/${symbol}.c")
 endfunction()
 
-target_binary( "${D4XX_FW_URL}"  "${D4XX_FW_VERSION}"  "${D4XX_FW_SHA1}" D4XX_FW_Image .bin)
-target_binary( "${SR3XX_FW_URL}"  "${SR3XX_FW_VERSION}"  "${SR3XX_FW_SHA1}" SR3XX_FW_Image .bin)
+#target_binary( "${D4XX_FW_URL}"  "${D4XX_FW_VERSION}"  "${D4XX_FW_SHA1}" D4XX_FW_Image .bin)
+#target_binary( "${SR3XX_FW_URL}"  "${SR3XX_FW_VERSION}"  "${SR3XX_FW_SHA1}" SR3XX_FW_Image .bin)
 target_binary( "${T26X_FW_URL}"  "${T26X_FW_VERSION}"  "${T26X_FW_SHA1}" target .mvcmd)
-target_binary( "${L51X_FW_URL}"  "${L51X_FW_VERSION}"  "${L51X_FW_SHA1}" L51X_FW_Image .bin)
-target_binary( "${L53X_FW_URL}"  "${L53X_FW_VERSION}"  "${L53X_FW_SHA1}" L53X_FW_Image .bin)
+#target_binary( "${L51X_FW_URL}"  "${L51X_FW_VERSION}"  "${L51X_FW_SHA1}" L51X_FW_Image .bin)
+#target_binary( "${L53X_FW_URL}"  "${L53X_FW_VERSION}"  "${L53X_FW_SHA1}" L53X_FW_Image .bin)
 
 
 

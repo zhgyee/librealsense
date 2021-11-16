@@ -146,8 +146,10 @@ public class MainActivity extends AppCompatActivity {
     private void configAndStart() throws Exception {
         for(int i = 0; i < mPipelines.size(); i++) {
             try (Config config = new Config()) {
+                Log.d(TAG, "config = " + config);
                 config.enableDevice(deviceList.createDevice(i).getInfo(CameraInfo.SERIAL_NUMBER));
-                config.enableStream(StreamType.DEPTH, 640, 480);
+//                config.enableStream(StreamType.DEPTH, 640, 480);
+                config.enableStream(StreamType.COLOR, 848, 800);
                 Pipeline pipe = mPipelines.get(i);
                 // try statement needed here to release resources allocated by the Pipeline:start() method
                 try (PipelineProfile pp = pipe.start(config)) {}
@@ -163,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
     private synchronized void start() {
         deviceList = mRsContext.queryDevices();
         int devCount = deviceList.getDeviceCount();
+        Log.d(TAG, "device count:" + devCount);
         if( devCount > 0) {
             for (int i = 0; i < devCount; i++)
             {

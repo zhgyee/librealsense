@@ -67,14 +67,34 @@ namespace librealsense
 
         usb_status usb_messenger_usbhost::bulk_transfer(const std::shared_ptr<usb_endpoint>&  endpoint, uint8_t* buffer, uint32_t length, uint32_t& transferred, uint32_t timeout_ms)
         {
-            auto sts = usb_device_bulk_transfer(_device->get_handle(), endpoint->get_address(), buffer, length, timeout_ms);
-            if(sts < 0)
-            {
-                std::string strerr = strerror(errno);
-                LOG_WARNING("bulk_transfer returned error, endpoint: " << (int)endpoint->get_address() << ", error: " << strerr << ", number: " << (int)errno);
-                return usbhost_status_to_rs(errno);
+            const int size = 4096;
+            const int num = length / size;
+            int remain = length % size;
+            for (int l = 0; l < num; l++) {
+                auto sts = usb_device_bulk_transfer(_device->get_handle(), endpoint->get_address(),
+                        buffer + l * size, size, timeout_ms);
+                if(sts < 0)
+                {
+                    std::string strerr = strerror(errno);
+                    LOG_WARNING("bulk_transfer returned error, endpoint: " << (int)endpoint->get_address() << ", error: " << strerr << ", number: " << (int)errno);
+//                    return usbhost_status_to_rs(errno);
+                }
+                transferred = sts;
             }
-            transferred = sts;
+
+            if (remain > 0) {
+                auto sts = usb_device_bulk_transfer(_device->get_handle(), endpoint->get_address(),
+                        buffer + num * size, remain, timeout_ms);
+                if (sts < 0) {
+                    std::string strerr = strerror(errno);
+                    LOG_WARNING("bulk_transfer returned error 2, endpoint: "
+                            << (int) endpoint->get_address() << ", error: " << strerr
+                            << ", number: " << (int) errno);
+//                    return usbhost_status_to_rs(errno);
+                }
+                transferred = sts;
+            }
+
             return RS2_USB_STATUS_SUCCESS;
         }
 

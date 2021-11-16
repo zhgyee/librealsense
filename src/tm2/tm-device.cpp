@@ -8,6 +8,7 @@
 #include <memory>
 #include <thread>
 #include <inttypes.h> // PRIu64
+#include <sys/endian.h>
 #include "tm-device.h"
 #include "stream.h"
 #include "media/playback/playback_device.h"

@@ -111,10 +111,11 @@ public class DetachedActivity extends AppCompatActivity {
             }
         });
 
-        mMinimalFirmwares.put(ProductLine.D400, MINIMAL_D400_FW_VERSION);
+        mMinimalFirmwares.put(ProductLine.TRACKING, MINIMAL_D400_FW_VERSION);
     }
 
     private synchronized void validatedDevice(){
+        Log.d(TAG, "validatedDevice");
         if(mUpdating)
             return;
         try(DeviceList dl = mRsContext.queryDevices()){
@@ -134,7 +135,7 @@ public class DetachedActivity extends AppCompatActivity {
 
                 return;
             }
-
+            Log.d(TAG, "validatedDevice 2");
             try(Device d = dl.createDevice(0)){
                 if(d == null)
                     return;

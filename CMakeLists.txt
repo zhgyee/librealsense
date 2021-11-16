@@ -13,13 +13,13 @@ endif()
 # Checking Internet connection, as TM2 needs to download the FW from amazon cloud
 if(BUILD_WITH_TM2 AND NOT INTERNET_CONNECTION)
     message(WARNING "No internet connection, disabling BUILD_WITH_TM2")
-    set(BUILD_WITH_TM2 OFF)
+    #set(BUILD_WITH_TM2 OFF)
 endif()
 
 # Checking Internet connection, as DEPTH CAM needs to download the FW from amazon cloud
 if(IMPORT_DEPTH_CAM_FW AND NOT INTERNET_CONNECTION)
     message(WARNING "No internet connection, disabling IMPORT_DEPTH_CAM_FW")
-    set(IMPORT_DEPTH_CAM_FW OFF)
+    #set(IMPORT_DEPTH_CAM_FW OFF)
 endif()
 
 if (BUILD_PC_STITCHING AND NOT BUILD_GLSL_EXTENSIONS)

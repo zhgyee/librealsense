@@ -18,9 +18,9 @@ public class UsbUtilities {
     public static final String ACTION_USB_PERMISSION = "USB_CONTROL_PERMISSION";
 
     public static boolean isIntel(UsbDevice usbDevice){
-        if (usbDevice.getVendorId() == 0x8086)
-            return true;
-        return false;
+//        if (usbDevice.getVendorId() == 0x8086)
+//            return true;
+        return true;
     }
 
     private static List<UsbDevice> getUsbDevices(Context context, Integer vId) {
@@ -34,12 +34,12 @@ public class UsbUtilities {
         HashMap<String, UsbDevice> devicesMap = usbManager.getDeviceList();
         for (Map.Entry<String, UsbDevice> entry : devicesMap.entrySet()) {
             UsbDevice usbDevice = entry.getValue();
-            if (usbDevice.getVendorId() == vId && (usbDevice.getProductId() == pId || pId == 0)) {
+//            if (usbDevice.getVendorId() == vId && (usbDevice.getProductId() == pId || pId == 0)) {
                 res.add(usbDevice);
-            }
+//            }
         }
         if (res.isEmpty())
-            Log.w(TAG, "getUsbDevice: failed to locate USB device, " + "VID: " + String.format("0x%04x", vId) + ", PID: " + String.format("0x%04x", pId));
+            Log.w(TAG, "getUsbDevice: failed to locate USB devicexxxx, " + "VID: " + String.format("0x%04x", vId) + ", PID: " + String.format("0x%04x", pId));
         return res;
     }
 

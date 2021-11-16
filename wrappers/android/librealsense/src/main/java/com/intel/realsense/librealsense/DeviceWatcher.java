@@ -74,6 +74,7 @@ class DeviceWatcher extends LrsClass {
             }
         }
         for(String name : intelDevices) {
+            Log.d(TAG, "try add device:" + name);
             if(!mDescriptors.containsKey(name)) {
                 addDevice(devicesMap.get(name));
             }
