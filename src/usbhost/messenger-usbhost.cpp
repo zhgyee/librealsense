@@ -77,9 +77,9 @@ namespace librealsense
                 {
                     std::string strerr = strerror(errno);
                     LOG_WARNING("bulk_transfer returned error, endpoint: " << (int)endpoint->get_address() << ", error: " << strerr << ", number: " << (int)errno);
-//                    return usbhost_status_to_rs(errno);
+                    return usbhost_status_to_rs(errno);
                 }
-                transferred = sts;
+                transferred += sts;
             }
 
             if (remain > 0) {
@@ -90,9 +90,9 @@ namespace librealsense
                     LOG_WARNING("bulk_transfer returned error 2, endpoint: "
                             << (int) endpoint->get_address() << ", error: " << strerr
                             << ", number: " << (int) errno);
-//                    return usbhost_status_to_rs(errno);
+                    return usbhost_status_to_rs(errno);
                 }
-                transferred = sts;
+                transferred += sts;
             }
 
             return RS2_USB_STATUS_SUCCESS;
